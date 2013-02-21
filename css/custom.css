@@ -1,0 +1,17 @@
+
+#wrapper {
+	width: 960px;
+}
+
+#main {
+	margin-top: 2%;
+}
+
+#footer {
+	margin-top: 5%;
+}
+
+#footer h4 {
+	text-align: center;
+}
+
