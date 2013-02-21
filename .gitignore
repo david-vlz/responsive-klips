@@ -2,3 +2,4 @@
 .htaccess
 data/*
 *.zip
+.DS_Store
