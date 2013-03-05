@@ -1,9 +1,12 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="de">
 
 	<head>
-		<title>Responsive KLIPS</title>	
+		<title>Responsive KLIPS</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="/img/favicon.ico"> <!-- Browser-Icon (gibt es noch nicht...) -->	 
+		<link rel="apple-touch-icon" href="/img/apple-touch-icon.png"> <!-- iPhone-/iPad-Icon (sollte 114x114 Pixel sein, keine Transparenz; gibt es auch noch nicht...) -->
+
 		<!-- Bootstrap-css -->
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 		<!-- eigenen css-Datei für weitere Modifikationen -->
@@ -13,23 +16,23 @@
 	<body>
 		<div id="wrapper" class="container-fluid">
 			
-			<div id="header" class="row-fluid">
+			<header id="header" class="row-fluid">
 				<? $this->header->render() ?>
-			</div>
+			</header>
 			
 			<div id="main" class="row-fluid">
-				<div id="sidebar" class="span3">
+				<nav id="sidebar" class="span3">
 					<? $this->sidebar->render() ?>
-				</div>
+				</nav>
 				<div id="content" class="span9">
 					<? $this->content->render() ?>
 				</div>
 			</div>
 			
-			<div id="footer" class="row-fluid">
+			<footer id="footer" class="row-fluid">
 					<pre><? var_dump(array_merge($_GET, $_POST)) ?></pre>
 					<pre><? var_dump($this->content) ?></pre>
-			</div>
+			</footer>
 
 		</div>
 	</body>
