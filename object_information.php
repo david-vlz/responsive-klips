@@ -40,7 +40,7 @@
 		"name" => "Alex",
 		"studiengang" => "Informationsverarbeitung",
 		"semester" => 4,
-		"courses" => Array(1)
+		"courses" => Array(1, 2)
 	);
 	
 	$studentInfo2 = Array(
