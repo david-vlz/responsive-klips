@@ -1,6 +1,8 @@
 <?php
 
 	class Appointment extends SessionData {
+
+		var $connectsTo = Array();
 	
 		var $title;
 	

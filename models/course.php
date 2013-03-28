@@ -1,6 +1,8 @@
 <?php
 
 	class Course extends sessionData {
+
+		var $connectsTo = Array("appointments" => "Appointment");
 		
 		var $titel;
 		
