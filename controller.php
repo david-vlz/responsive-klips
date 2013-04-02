@@ -43,6 +43,19 @@
 				}
 
 			}
+
+
+			// Controller für Location ^stefan
+			else if ($params['controller'] == 'location') {
+		        if ($params['action'] == 'show') {
+
+		         $object = $this->objectFactory->getObject("Location", (int) $params['id']);
+		         $content = new Template($this->VIEWS_DIR . 'location_show.php', Array("location" => $object) );
+
+		        }
+		    }
+
+
 			// wenn kein bekannter Controller bekannt ist, wird der Inhalt der 
 			// Homepage geladen
 			else {

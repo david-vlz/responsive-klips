@@ -2,6 +2,7 @@
 <html lang="de">
 
 	<head>
+		<meta charset="utf-8">
 		<title>Responsive KLIPS</title>
 		<meta name="viewport" content="width=device-width">
 		<link rel="shortcut icon" href="/img/favicon.ico"> <!-- Browser-Icon (gibt es noch nicht...) -->	 

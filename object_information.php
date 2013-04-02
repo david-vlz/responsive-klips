@@ -90,4 +90,33 @@
 	);
 
 
+
+
+	/**
+	 * Feldinformationen für Objekte vom Typ Location
+	 */
+
+	$LOCATION_INFO_AMOUNT = 3;
+
+	$locationInfo1 = Array(
+		"id" => 1,
+		"gebnr" => "100",
+		"name" => "Hauptgebäude",
+		"adresse" => "Albertus-Magnus-Platz 1"
+	);
+
+	$locationInfo2 = Array(
+		"id" => 2,
+		"gebnr" => "101",
+		"name" => "WiSo-Gebäude",
+		"adresse" => "Universitätsstraße 24"
+	);
+
+	$locationInfo3 = Array(
+		"id" => 3,
+		"gebnr" => "102",
+		"name" => "WiSo-Hochhaus",
+		"adresse" => "Universitätsstraße 24"
+	);
+
 ?>

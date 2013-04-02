@@ -1,0 +1,1 @@
+<h1><?= $this->location->name ?></h1>
