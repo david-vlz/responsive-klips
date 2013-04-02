@@ -96,7 +96,7 @@
 	 * Feldinformationen für Objekte vom Typ Location
 	 */
 
-	$LOCATION_INFO_AMOUNT = 3;
+	$LOCATION_INFO_AMOUNT = 5;
 
 	$locationInfo1 = Array(
 		"id" => 1,
@@ -117,6 +117,20 @@
 		"gebnr" => "102",
 		"name" => "WiSo-Hochhaus",
 		"adresse" => "Universitätsstraße 24"
+	);
+
+	$locationInfo4 = Array(
+		"id" => 4,
+		"gebnr" => "103",
+		"name" => "Philosophikum",
+		"adresse" => "Universitätsstraße 41"
+	);
+
+	$locationInfo5 = Array(
+		"id" => 5,
+		"gebnr" => "125b",
+		"name" => "Küpperstift Eingang Weyertal",
+		"adresse" => "Kerpener Str. 30"
 	);
 
 ?>
