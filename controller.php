@@ -33,16 +33,57 @@
 			// abhängig von den Parametern in $this->params wird dafür ein
 			// bestimmtes Template ausgewählt
 			$params = $this->params;
+			
 			if ($params['controller'] == 'student') {
-
 				if ($params['action'] == 'index') {
 					$content = new Template(
 						$this->VIEWS_DIR . 'student_index_example.php', 
 						Array('students' => $this->objects['student'])
 					);
 				}
-
 			}
+			else if ($params['controller'] == 'data') {
+				if ($params['action'] == 'index') {
+					$content = new Template(
+						$this->VIEWS_DIR . 'course_index.php', 
+						Array('courses' => $this->objects['course'])
+					);
+				}
+			}
+			else if ($params['controller'] == 'course') {
+				if ($params['action'] == 'index') {
+					$content =new Template (
+						$this->VIEWS_DIR . 'guide_index.php',
+						Array('institutes' => $this->objects['guide'])
+					);
+				}
+			}
+			/*else if ($params['controller'] == 'course') {
+				if ($params['action'] == 'index') {
+					$content =new Template (
+						$this->VIEWS_DIR . 'guide_index.php',
+						Array('subjects' => $this->objects['department'])
+					);
+				}
+			}*/
+			else if ($params['controller'] == 'test') {
+				if ($params['action'] == 'index') {
+					$content =new Template (
+						$this->VIEWS_DIR . 'new_template.php',
+						Array('subjects' => $this->objects['department'])
+					);
+				}
+			}
+			else if ($params['controller'] == 'search_major') {
+				if ($params['action'] == 'index') {
+					echo "blablubb\n";
+					$content = new Template (
+						$this->VIEWS_DIR . 'search_major.php',
+						Array()
+					);
+				}
+			}
+			
 			// wenn kein bekannter Controller bekannt ist, wird der Inhalt der 
 			// Homepage geladen
 			else {
@@ -54,7 +95,7 @@
 				Array('header' => $header,
 					  'sidebar' => $sidebar,
 					  'content' => $content,
-					  'footer' => $footer,
+					  'footer' => $footer
 				)
 			);
 			// Template für die gesamte Seite anzeigen, dabei wird das

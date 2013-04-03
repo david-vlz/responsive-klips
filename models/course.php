@@ -1,10 +1,12 @@
 <?php
 
 	class Course extends sessionData {
-
-		var $connectsTo = Array("appointments" => "Appointment");
+	
+		var $connectsTo = Array();
 		
 		var $titel;
+		
+		var $lehrperson;
 		
 		var $lvNummer;
 		
@@ -12,7 +14,21 @@
 		
 		var $semesterstunden;
 		
-		var $lehrperson;
+		var $teilnehmeranzahl;
+		
+		var $semester;
+		
+		var $mail;
+		
+		var $sprache;
+		
+		var $zeit;
+		
+		var $gebaeude;
+		
+		var $beschreibung;
+		
+		var $literatur;
 		
 		var $appointments; // Ein Array von Appointment Objekten
 		

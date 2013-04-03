@@ -1,8 +1,8 @@
 <?php
 	
 	abstract class SessionData {
-
-		// Eine eindeutige id (eindeutig innerhalb der Menge aller Objekte der
+		
+		// Eine eindeutige id (eindeutig innerhalb der Menge aller Objekte der 
 		// Klasse)
 		var $id;
 
@@ -11,7 +11,7 @@
 		// "Attributname" => "Klassenname der verknüpften Objekte"
 		var $connectsTo;
 		
-		// Eine eindeutige Bezeichnung des Objekts: Klassenname + id 
+		// Eine eindeutige Bezeichnung des Objekts: Klassenname +id 
 		// etwa: "course15"
 		function getObjectId() {
 			return strtolower(get_class($this)) . $this->id;

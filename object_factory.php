@@ -2,19 +2,19 @@
 	
 	class ObjectFactory {
 		
-		private $CLASS_NAMES = Array("Course", "Student", "Appointment");
+		private $CLASS_NAMES = Array("Course", "Student", "Appointment", "Guide", "Department");
 		
 		private $DATA_DIRECTORY = './data/';
-		
+
 		private $INDEX_FILENAME = 'index';
-		
+
 		private $INFORMATION_FILE = 'object_information.php';
-		
+
 		// Assoziatives Array zum Vorhalten aller erzeugten Objekte, 
 		// keys entsprechen immer dem kleingeschriebenen Klassennamen
 		// $objects["student"][1] = ein Student Objekt
 		var $objects;
-		
+
 		function __construct() {
 			$objects = Array();
 			// Einbinden der nowendigen Model-Dateien
@@ -23,7 +23,7 @@
 				require_once('models/' . strtolower($name) . '.php');
 			}
 		}
-		
+
 		// Alle Klassen durchgehen und die Felder mit den Werten aus den 
 		// hartgecodeten "InfoArrays" befüllen
 		function loadFromObjectInformationHashes() {
@@ -68,7 +68,7 @@
 			$this->objects = $objects;
 			return $this->objects;
 		}
-		
+
 		// serialisiert alle Objekte ins Dateverzeichnis und erstellt die
 		// Indexdatei mit den Namen der Dateien
 		function serializeAll() {
@@ -108,7 +108,7 @@
 				}
 			}
 		}
-		
+
 		// Die gerade vorgehaltenen Objekte in die Indexdatei schreiben
 		// Deren Einträge entsprechen den Dateinamen im "data drectory"
 		// Alte Einträge werden überschrieben.
@@ -122,7 +122,7 @@
 			}
 			fclose($file);
 		}
-		
+
 		function getClassNames() {
 			return $this->CLASS_NAMES;
 		}
@@ -135,8 +135,7 @@
 			}
 			return null;
 		}
-	
 	}
-	
+
 
 ?>
