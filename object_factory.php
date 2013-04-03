@@ -2,19 +2,19 @@
 	
 	class ObjectFactory {
 		
-		private $CLASS_NAMES = Array("Course", "Student", "Appointment");
+		private $CLASS_NAMES = Array("Course", "Student", "Appointment", "Guide", "Department");
 		
 		private $DATA_DIRECTORY = './data/';
-		
+
 		private $INDEX_FILENAME = 'index';
-		
+
 		private $INFORMATION_FILE = 'object_information.php';
-		
+
 		// Assoziatives Array zum Vorhalten aller erzeugten Objekte, 
 		// keys entsprechen immer dem kleingeschriebenen Klassennamen
 		// $objects["student"][1] = ein Student Objekt
 		var $objects;
-		
+
 		function __construct() {
 			$objects = Array();
 			// Einbinden der nowendigen Model-Dateien
@@ -23,7 +23,7 @@
 				require_once('models/' . strtolower($name) . '.php');
 			}
 		}
-		
+
 		// Alle Klassen durchgehen und die Felder mit den Werten aus den 
 		// hartgecodeten "InfoArrays" befüllen
 		function loadFromObjectInformationHashes() {
@@ -48,6 +48,7 @@
 				$key = strtolower($className);
 				$this->objects["$key"] = ${$objectsContainerName};
 			}
+			$this->linkObjects();
 		}
 
 		// liest die die Indexdatei im Datenverezcihnis und lädt alle Objekte,
@@ -67,7 +68,7 @@
 			$this->objects = $objects;
 			return $this->objects;
 		}
-		
+
 		// serialisiert alle Objekte ins Dateverzeichnis und erstellt die
 		// Indexdatei mit den Namen der Dateien
 		function serializeAll() {
@@ -78,7 +79,36 @@
 			}
 			$this->updateIndex();
 		}
-		
+
+		// Erstellt Verknüpfungen zwischen Objekten. 
+		// Attribute, die eine Klasse bezeichnen, werden ausgelesen und erhalten
+		// als Werte die Objekte, die den ids entsprechen, die eigentlich dort
+		// verzeichnet sind.
+		// Benutzt nicht $CLASS_NAMES als Referenz, sondern verlinkt nur
+		// Objekte, die bereits initialisiert sind.
+		function linkObjects() {
+			foreach ($this->objects as $type => $objectsContainer) {
+				foreach ($objectsContainer as $object) {
+					// Abfragen, mit welchen Typen das Objekt generell verknüpft
+					// ist
+					foreach ($object->connectsTo as $attribute => $klass) {
+						$linkedObjects = Array();
+						// Einzelne Objektids abfragen und Objekte suchen
+						foreach ($object->{$attribute} as $linkedObjectId) {
+							// TODO, id auf Integer-Typ prüfen.
+							$linkedObject = $this->getObject($klass, $linkedObjectId);
+							if ($linkedObject != null) {
+								$linkedObjects[] = $linkedObject;
+							}
+						}
+						// Die gefundenen Objekte in die Instanzvariable
+						// schreiben, die vorher die ids im Array enthielt
+						$object->{$attribute} = $linkedObjects;
+					}
+				}
+			}
+		}
+
 		// Die gerade vorgehaltenen Objekte in die Indexdatei schreiben
 		// Deren Einträge entsprechen den Dateinamen im "data drectory"
 		// Alte Einträge werden überschrieben.
@@ -92,12 +122,21 @@
 			}
 			fclose($file);
 		}
-		
+
 		function getClassNames() {
 			return $this->CLASS_NAMES;
 		}
-	
+
+		function getObject($className, $id) {
+			foreach ($this->objects[strtolower($className)] as $object) {
+			 	if ($object->id == $id) {
+			 		return $object;
+			 	}
+			}
+			return null;
+		}
+
 	}
-	
+
 
 ?>

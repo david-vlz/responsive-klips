@@ -11,6 +11,10 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 		<!-- eigenen css-Datei für weitere Modifikationen -->
 		<link rel="stylesheet" href="css/custom.css" media="screen" />
+		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
+		<script type="text/javascript" src="js/jquery.chained.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		
 	</head>
 
 	<body>
