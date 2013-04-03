@@ -42,6 +42,7 @@
 					);
 				}
 			}
+
 			else if ($params['controller'] == 'data') {
 				if ($params['action'] == 'index') {
 					$content = new Template(
@@ -76,14 +77,23 @@
 			}
 			else if ($params['controller'] == 'search_major') {
 				if ($params['action'] == 'index') {
-					echo "blablubb\n";
 					$content = new Template (
 						$this->VIEWS_DIR . 'search_major.php',
 						Array()
 					);
 				}
 			}
-			
+
+			// Controller für Location ^stefan
+			else if ($params['controller'] == 'location') {
+		        if ($params['action'] == 'show') {
+
+		         $object = $this->objectFactory->getObject("Location", (int) $params['id']);
+		         $content = new Template($this->VIEWS_DIR . 'location_show.php', Array("location" => $object) );
+
+		        }
+		    }
+
 			// wenn kein bekannter Controller bekannt ist, wird der Inhalt der 
 			// Homepage geladen
 			else {

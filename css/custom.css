@@ -15,3 +15,9 @@
 	text-align: center;
 }
 
+/* Styles für Location ^stefan */
+
+#map_canvas { 
+	width: 400px;
+	height: 300px;
+}

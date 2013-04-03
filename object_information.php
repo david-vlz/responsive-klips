@@ -3,8 +3,6 @@
 	/**
 	 * Feldinformationen für Objekten vom Typ Course
 	 */
-	 
-	
 	$COURSE_INFO_AMOUNT = 10;
 	
 	$courseInfo1 = Array(
@@ -517,4 +515,46 @@
 		"name" => "Wirtschafts-und Sozialwissenschaftliche Fakult&aumlt",
 		"institutes" => Array (35,36,37,38,39,40,41,42,43,44,45,46,27),
 	);
-	?>
+
+	/**
+	 * Feldinformationen für Objekte vom Typ Location
+	 */
+
+	$LOCATION_INFO_AMOUNT = 5;
+
+	$locationInfo1 = Array(
+		"id" => 1,
+		"gebnr" => "100",
+		"name" => "Hauptgebäude",
+		"adresse" => "Albertus-Magnus-Platz 1"
+	);
+
+	$locationInfo2 = Array(
+		"id" => 2,
+		"gebnr" => "101",
+		"name" => "WiSo-Gebäude",
+		"adresse" => "Universitätsstraße 24"
+	);
+
+	$locationInfo3 = Array(
+		"id" => 3,
+		"gebnr" => "102",
+		"name" => "WiSo-Hochhaus",
+		"adresse" => "Universitätsstraße 24"
+	);
+
+	$locationInfo4 = Array(
+		"id" => 4,
+		"gebnr" => "103",
+		"name" => "Philosophikum",
+		"adresse" => "Universitätsstraße 41"
+	);
+
+	$locationInfo5 = Array(
+		"id" => 5,
+		"gebnr" => "125b",
+		"name" => "Küpperstift Eingang Weyertal",
+		"adresse" => "Kerpener Str. 30"
+	);
+
+?>

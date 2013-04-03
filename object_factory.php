@@ -2,7 +2,7 @@
 	
 	class ObjectFactory {
 		
-		private $CLASS_NAMES = Array("Course", "Student", "Appointment", "Guide", "Department");
+		private $CLASS_NAMES = Array("Course", "Student", "Appointment", "Guide", "Department", "Location");
 		
 		private $DATA_DIRECTORY = './data/';
 
