@@ -1,4 +1,5 @@
 <?php
+include "config.php"; // API-Key holen
 $id = $this->location->id;
 $name = $this->location->name;
 $gebnr = $this->location->gebnr;
@@ -18,7 +19,7 @@ $ort = $adresse . ", 50923 Köln";
 <script type="text/javascript">
 	var geocoder, map;
  
-  	function initialize() {
+  function initialize() {
     	
     	geocoder = new google.maps.Geocoder();
     	var latlng = new google.maps.LatLng(50.927, 6.921);
@@ -35,7 +36,7 @@ $ort = $adresse . ", 50923 Köln";
  
 	function codeAddress() {
     	
-    	var address = "<?php echo $ort; ?>";
+    	var address = "<?= $ort; ?>";
 
     	geocoder.geocode( { 'address': address}, function(results, status) {
 
@@ -61,7 +62,7 @@ $ort = $adresse . ", 50923 Köln";
 
 		var script = document.createElement("script");
 		script.type = "text/javascript";
-		script.src = "http://maps.googleapis.com/maps/api/js?key=APIKEY&sensor=false&callback=initialize";
+		script.src = "http://maps.googleapis.com/maps/api/js?key=<?= $mapskey; ?>&sensor=false&callback=initialize";
 		// API-Key mit IP Locking, wird nach Fertigstellung des Projekts deaktiviert
 		document.body.appendChild(script);
 	}
