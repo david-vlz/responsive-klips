@@ -15,7 +15,7 @@ $ort = $adresse . ", 50923 Köln";
 	<b>Adresse:</b> <?= $adresse; ?>
 </p>
 
-<!-- Google Maps API v3 -->
+<!-- Google Maps JavaScript API v3 -->
 <script type="text/javascript">
 	var geocoder, map;
  

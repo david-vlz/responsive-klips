@@ -86,11 +86,20 @@
 
 			// Controller für Location ^stefan
 			else if ($params['controller'] == 'location') {
+
+				// Übersicht aller Gebäude
+				if ($params['action'] == 'index') {
+					$content = new Template(
+						$this->VIEWS_DIR . 'location_index.php', 
+						Array('location' => $this->objects['location'])
+					);
+				}
+
+				// Einzelansicht für ein Gebäude
 		        if ($params['action'] == 'show') {
 
 		         $object = $this->objectFactory->getObject("Location", (int) $params['id']);
 		         $content = new Template($this->VIEWS_DIR . 'location_show.php', Array("location" => $object) );
-
 		        }
 		    }
 
