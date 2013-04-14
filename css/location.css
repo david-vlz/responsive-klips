@@ -1,0 +1,38 @@
+/*
+	Stylesheet für die Location-Seiten
+*/
+#map_canvas {
+  width: 400px;
+  height: 300px;
+}
+
+.dataTables_filter {
+  float: right;
+  text-align: right;
+}
+.dataTables_filter label {
+  font-weight: bold;
+}
+
+#gebaeudeliste thead {
+  font-weight: bold;
+}
+#gebaeudeliste .sorting_asc {
+  background: url("../img/datatables/sort_asc.png") no-repeat center right;
+}
+#gebaeudeliste .sorting_desc {
+  background: url("../img/datatables/sort_desc.png") no-repeat center right;
+}
+#gebaeudeliste .sorting {
+  background: url("../img/datatables/sort_both.png") no-repeat center right;
+}
+#gebaeudeliste .sorting_asc_disabled {
+  background: url("../img/datatables/sort_asc_disabled.png") no-repeat center right;
+}
+#gebaeudeliste .sorting_desc_disabled {
+  background: url("../img/datatables/sort_desc_disabled.png") no-repeat center right;
+}
+#gebaeudeliste table.display thead th:active,
+#gebaeudeliste table.display thead td:active {
+  outline: none;
+}

@@ -1,0 +1,47 @@
+/*
+	Stylesheet für die Location-Seiten
+*/
+
+#map_canvas { 
+	width: 400px;
+	height: 300px;
+}
+
+// DataTables Filter
+.dataTables_filter {
+		float: right;
+		text-align: right;
+		label { font-weight: bold; }
+	}
+
+// Gebäudeliste
+#gebaeudeliste { 
+	thead { font-weight: bold; }
+
+	// DataTables Sort Arrows
+	.sorting_asc {
+		background: url('../img/datatables/sort_asc.png') no-repeat center right;
+	}
+
+	.sorting_desc {
+		background: url('../img/datatables/sort_desc.png') no-repeat center right;
+	}
+
+	.sorting {
+		background: url('../img/datatables/sort_both.png') no-repeat center right;
+	}
+
+	.sorting_asc_disabled {
+		background: url('../img/datatables/sort_asc_disabled.png') no-repeat center right;
+	}
+
+	.sorting_desc_disabled {
+		background: url('../img/datatables/sort_desc_disabled.png') no-repeat center right;
+	}
+	 
+	table.display thead th:active,
+	table.display thead td:active {
+		outline: none;
+	}
+
+}

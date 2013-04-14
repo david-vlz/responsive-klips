@@ -8,10 +8,7 @@
 		<link rel="shortcut icon" href="/img/favicon.ico"> <!-- Browser-Icon (gibt es noch nicht...) -->	 
 		<link rel="apple-touch-icon" href="/img/apple-touch-icon.png"> <!-- iPhone-/iPad-Icon (sollte 114x114 Pixel sein, keine Transparenz; gibt es auch noch nicht...) -->
 
-		<!-- Bootstrap-css -->
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
-		<!-- eigenen css-Datei für weitere Modifikationen -->
-		<link rel="stylesheet" href="css/custom.css" media="screen" />
+		<link href="css/stylesheet.css" rel="stylesheet" media="screen" />
 		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
 		<script type="text/javascript" src="js/jquery.chained.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js" ></script>

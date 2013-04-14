@@ -7,6 +7,12 @@ $adresse = $this->location->adresse;
 $ort = $adresse . ", 50923 Köln";
 ?>
 
+<ul class="breadcrumb">
+  <li><a href="#">Hilfe & Service</a> <span class="divider">/</span></li>
+  <li><a href="#">Gebäude</a> <span class="divider">/</span></li>
+  <li><a href="#"><?= $name; ?></a></li>
+</ul>
+
 <h1><?= $name; ?></h1>
 
 <p>
