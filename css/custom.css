@@ -1,6 +1,21 @@
+/* Responsive Wrapper */
+@media screen and (min-width: 1024px) {
+	#wrapper {
+		width: 960px;
+	}
+}
 
-#wrapper {
-	width: 960px;
+@media screen and (max-width: 1024px) {
+	#wrapper {
+		width: 93.75%;
+	}
+}
+
+@media screen and (max-width: 810px) {
+	#wrapper {
+		width: 100%;
+	}
+	.klipsvoll { display: none; }
 }
 
 #main {
@@ -14,3 +29,9 @@
 #footer h4 {
 	text-align: center;
 }
+
+/* Header */
+#header { margin-top: 2%; background: #fff url('../img/skyline.png') no-repeat bottom right; }
+.logo { float: left; margin: 0 15px 0 0; }
+#header h1 { font-size: 24px; line-height: 32px; }
+

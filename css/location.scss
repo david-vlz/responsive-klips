@@ -3,9 +3,11 @@
 */
 
 #map_canvas { 
-	width: 400px;
+	width: 100%;
 	height: 300px;
 }
+
+h2 { font-size: 24px; }
 
 // DataTables Filter
 .dataTables_filter {
@@ -44,4 +46,12 @@
 		outline: none;
 	}
 
+}
+
+// Media Queries
+@media screen and (max-width: 600px) {
+	.zuordnung { display: none; }
+}
+@media screen and (max-width: 400px) {
+	.adresse { display: none; }
 }
