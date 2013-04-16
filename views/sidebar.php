@@ -1,5 +1,5 @@
 	<ul class="nav nav-list well">
-		<li><a href="#">Startseite</a></li>
+		<li><a href="index.php">Startseite</a></li>
 		<li class="nav-header">Vorlesungsverzeichnis</li>
 		<li><a href="index.php?controller=course&action=index">nach Einrichtungen</a></li>
 		<li><a href="index.php?controller=search_major&action=index">nach Studiengängen</a></li>
