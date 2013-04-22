@@ -52,4 +52,22 @@
 		  })
 		  </script>
           </div>
+
+       <!-- Schleife, die alle Fakultät aufruft -->
+<? foreach($this->department as $department) { ?>
+	<h3><?= $department->name; ?></h3>
+	<p>ID: <?= $department->id; ?></p>
+
+	<!-- Schleife, die die jeweiligen Institute aufliste -->
+	<? foreach($department->institutes as $institute) { ?>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Institut: <?= $institute->name; ?></p>
+
+		<!-- Schleife, die die jeweiligen Kurse anzeigt -->
+		<? foreach($institute->courses as $course) { ?>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kurs: <?= $course->titel; ?>, Dozent: <?= $course->lehrperson; ?></p>
+		<? } ?>
+
+	<? } ?>
+
+<? } ?>
 		  
