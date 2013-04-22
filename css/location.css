@@ -52,10 +52,38 @@
     display: none;
   }
 }
-#einzelansicht {
-  width: 70%;
+@media screen and (min-width: 601px) {
+  #einzelansicht {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #einzelansicht {
+    width: 100%;
+  }
 }
 #einzelansicht .title {
   font-weight: bold;
   width: 110px;
+}
+
+@media screen and (min-width: 601px) {
+  #show_photo {
+    float: right;
+  }
+}
+@media screen and (max-width: 600px) {
+  #show_photo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+#show_photo img {
+  max-width: 150px;
+  max-height: 150px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  background: #f4f4f4 none repeat scroll 0 0;
+  padding: 6px 6px 6px 6px;
 }

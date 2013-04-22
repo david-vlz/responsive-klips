@@ -16,6 +16,10 @@ $adresse = $strasse . ", 50923 Köln";
 
 <h2><?= $name; ?></h2>
 
+<div id="show_photo">
+<a href="img/location/<?= $gebnr; ?>.jpg"><img src="img/location/thumbnail_<?= $gebnr; ?>.jpg" alt="<?= $name; ?>" title="<?= $name; ?>"></a>
+</div>
+
 <table id="einzelansicht" class="table table-striped">
     <tr>
         <td class="title">Geb.nr.</td>
@@ -34,8 +38,6 @@ $adresse = $strasse . ", 50923 Köln";
         <td><a href="http://www.uni-koeln.de/uni/gebaeude/<?= $gebnr; ?>.html">zur Gebäudewebseite</a></td>
     </tr>
 </table>
-
-<img src="img/location/<?= $gebnr; ?>.jpg" alt="" class="show_photo">
 
 <!-- Google Maps JavaScript API v3 -->
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<?= $mapskey; ?>&sensor=false&callback=initialize"></script> <!-- API-Key mit IP Locking, wird nach Fertigstellung des Projekts deaktiviert -->
