@@ -518,43 +518,213 @@
 
 	/**
 	 * Feldinformationen für Objekte vom Typ Location
+	 * zuordnung: 0=Klinikum, 1=Universität
 	 */
 
-	$LOCATION_INFO_AMOUNT = 5;
+	$LOCATION_INFO_AMOUNT = 25;
+
+	// Beispieleinträge Klinikum
 
 	$locationInfo1 = Array(
 		"id" => 1,
-		"gebnr" => "100",
-		"name" => "Hauptgebäude",
-		"adresse" => "Albertus-Magnus-Platz 1"
+		"gebnr" => "1",
+		"zuordnung" => 0,
+		"name" => "Klinik-Verwaltung",
+		"strasse" => "Kerpener Str. 68"
 	);
 
 	$locationInfo2 = Array(
 		"id" => 2,
-		"gebnr" => "101",
-		"name" => "WiSo-Gebäude",
-		"adresse" => "Universitätsstraße 24"
+		"gebnr" => "2",
+		"zuordnung" => 0,
+		"name" => "Wohnheim",
+		"strasse" => "Gleueler Str. 88a"
 	);
 
 	$locationInfo3 = Array(
 		"id" => 3,
-		"gebnr" => "102",
-		"name" => "WiSo-Hochhaus",
-		"adresse" => "Universitätsstraße 24"
+		"gebnr" => "2a",
+		"zuordnung" => 0,
+		"name" => "Klinik-Verwaltung",
+		"strasse" => "Gleueler Str. 88a"
 	);
 
 	$locationInfo4 = Array(
 		"id" => 4,
-		"gebnr" => "103",
-		"name" => "Philosophikum",
-		"adresse" => "Universitätsstraße 41"
+		"gebnr" => "3",
+		"zuordnung" => 0,
+		"name" => "Strahlentherapie",
+		"strasse" => "Kerpener Str. 62"
 	);
 
 	$locationInfo5 = Array(
 		"id" => 5,
+		"gebnr" => "3a",
+		"zuordnung" => 0,
+		"name" => "CyberKnife - Zentrum",
+		"strasse" => "Kerpener Str. 62"
+	);
+
+	$locationInfo6 = Array(
+		"id" => 6,
+		"gebnr" => "4",
+		"zuordnung" => 0,
+		"name" => "Werkstatt",
+		"strasse" => "Kerpener Str. 62"
+	);
+
+	$locationInfo7 = Array(
+		"id" => 7,
+		"gebnr" => "5",
+		"zuordnung" => 0,
+		"name" => "Fernheizwerk",
+		"strasse" => "Gleueler Str. 80"
+	);
+
+	$locationInfo8 = Array(
+		"id" => 8,
+		"gebnr" => "6",
+		"zuordnung" => 0,
+		"name" => "Dr. Mildred Scheel Haus",
+		"strasse" => "Kerpener Str. 62"
+	);
+
+	$locationInfo9 = Array(
+		"id" => 9,
+		"gebnr" => "7",
+		"zuordnung" => 0,
+		"name" => "Wirtschaftsgebäude",
+		"strasse" => "Gleueler Str. 88"
+	);
+
+	$locationInfo10 = Array(
+		"id" => 10,
+		"gebnr" => "8",
+		"zuordnung" => 0,
+		"name" => "Klinikum Zentraler Komplex",
+		"strasse" => "Kerpener Str. 62"
+	);
+
+	$locationInfo11 = Array(
+		"id" => 11,
+		"gebnr" => "9",
+		"zuordnung" => 0,
+		"name" => "Bettenhaus Klinische Abteilungen",
+		"strasse" => "Kerpener Str. 62"
+	);
+
+	$locationInfo12 = Array(
+		"id" => 12,
+		"gebnr" => "10",
+		"zuordnung" => 0,
+		"name" => "Kinderklinik",
+		"strasse" => "Kerpener Str. 62"
+	);
+
+	// Beispieleinträge Universität
+
+	$locationInfo13 = Array(
+		"id" => 13,
+		"gebnr" => "100",
+		"zuordnung" => 1,
+		"name" => "Hauptgebäude",
+		"strasse" => "Albertus-Magnus-Platz 1"
+	);
+
+	$locationInfo14 = Array(
+		"id" => 14,
+		"gebnr" => "101",
+		"zuordnung" => 1,
+		"name" => "WiSo-Gebäude",
+		"strasse" => "Universitätsstraße 24"
+	);
+
+	$locationInfo15 = Array(
+		"id" => 15,
+		"gebnr" => "102",
+		"zuordnung" => 1,
+		"name" => "Studierenden Service Center (SSC)",
+		"strasse" => "Universitätsstraße 22a"
+	);
+
+	$locationInfo16 = Array(
+		"id" => 16,
+		"gebnr" => "103",
+		"zuordnung" => 1,
+		"name" => "Philosophikum",
+		"strasse" => "Universitätsstraße 41"
+	);
+
+	$locationInfo17 = Array(
+		"id" => 17,
+		"gebnr" => "105",
+		"zuordnung" => 1,
+		"name" => "Hörsaalgebäude",
+		"strasse" => "Universitätsstraße 35"
+	);
+
+	$locationInfo18 = Array(
+		"id" => 18,
+		"gebnr" => "106",
+		"zuordnung" => 1,
+		"name" => "Seminargebäude",
+		"strasse" => "Universitätsstraße 35"
+	);
+
+	$locationInfo19 = Array(
+		"id" => 19,
+		"gebnr" => "107",
+		"zuordnung" => 1,
+		"name" => "Universitäts- und Stadtbibliothek",
+		"strasse" => "Universitätsstraße 33"
+	);
+
+	$locationInfo20 = Array(
+		"id" => 20,
+		"gebnr" => "107a",
+		"zuordnung" => 1,
+		"name" => "Universitäts- und Stadtbibliothek",
+		"strasse" => "Universitätsstraße 33"
+	);
+
+	$locationInfo21 = Array(
+		"id" => 21,
+		"gebnr" => "107b",
+		"zuordnung" => 1,
+		"name" => "Universitäts- und Stadtbibliothek",
+		"strasse" => "Kerpener Str. 20"
+	);
+
+	$locationInfo22 = Array(
+		"id" => 22,
+		"gebnr" => "110",
+		"zuordnung" => 1,
+		"name" => "WiSo-Modulbau",
+		"strasse" => "Universitätsstr. 24"
+	);
+
+	$locationInfo23 = Array(
+		"id" => 23,
+		"gebnr" => "111",
+		"zuordnung" => 1,
+		"name" => "Diverse Einrichtungen",
+		"strasse" => "Meister-Ekkehart-Straße 11"
+	);
+
+	$locationInfo24 = Array(
+		"id" => 24,
+		"gebnr" => "118",
+		"zuordnung" => 1,
+		"name" => "Zentralmensa",
+		"strasse" => "Zülpicher Straße 70"
+	);
+
+	$locationInfo25 = Array(
+		"id" => 25,
 		"gebnr" => "125b",
+		"zuordnung" => 1,
 		"name" => "Küpperstift Eingang Weyertal",
-		"adresse" => "Kerpener Str. 30"
+		"strasse" => "Kerpener Str. 30"
 	);
 
 ?>

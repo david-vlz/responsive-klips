@@ -55,7 +55,7 @@
 				if ($params['action'] == 'index') {
 					$content =new Template (
 						$this->VIEWS_DIR . 'guide_index.php',
-						Array('institutes' => $this->objects['guide'])
+						Array('departments' => $this->objects['department'])
 					);
 				}
 			}
