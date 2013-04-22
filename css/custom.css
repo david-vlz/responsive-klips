@@ -17,6 +17,14 @@
 	}
 	.volltext { display: none; }
 }
+@media screen and (min-width: 321px) {
+	.unikoeln { display: block; }
+}
+@media screen and (max-width: 320px) {
+	.unikoeln { display: inline; }
+	.unikoeln:after { content: " - "; }
+	.breadcrumb { display: none; }
+}
 
 #main {
 	margin-top: 2%;
