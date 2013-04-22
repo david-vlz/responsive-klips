@@ -40,16 +40,14 @@ $adresse = $strasse . ", 50923 Köln";
 </table>
 
 <!-- Google Maps JavaScript API v3 -->
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<?= $mapskey; ?>&sensor=false&callback=initialize"></script> <!-- API-Key mit IP Locking, wird nach Fertigstellung des Projekts deaktiviert -->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<?= $mapskey; ?>&sensor=true&callback=initialize"></script> <!-- API-Key mit IP Locking, wird nach Fertigstellung des Projekts deaktiviert -->
 <script type="text/javascript">
 	var geocoder, map;
  
     function initialize() {
 
         var address = "<?= $adresse; ?>";
-        
         geocoder = new google.maps.Geocoder();
-
         geocoder.geocode( { 'address': address}, function(results, status) {
 
             if (status == google.maps.GeocoderStatus.OK) {
@@ -66,10 +64,34 @@ $adresse = $strasse . ", 50923 Köln";
                             map: map,
                             position: results[0].geometry.location
                 });
+
+                // Eigenen Standpunkt bestimmen, wenn unterstützt
+                if (navigator.geolocation) {
+                    
+                    navigator.geolocation.getCurrentPosition(function(position){
+
+                        var myPositionLat = position.coords.latitude;
+                        var myPositionLng = position.coords.longitude;
+
+                        myPosition = new google.maps.LatLng(myPositionLat,myPositionLng);
+                        var myPositionImage = "img/location/icon_myposition.png";
+
+                        var markerUser = new google.maps.Marker({
+                                map: map,
+                                position: myPosition,
+                                icon: myPositionImage
+                        });
+
+                    });
+
+                }
+                else {
+                    alert("Eigener Standort kann nicht bestimmt werden.");
+                }  
                 
             }
             else {
-                alert("Geocode konnte nicht aufgelöst werden. Status: " + status);
+                alert("Adresse konnte nicht aufgelöst werden. Status: " + status);
             }
 
         });
