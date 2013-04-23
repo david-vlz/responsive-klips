@@ -1,4 +1,4 @@
-﻿<!--Ziel: Information in den Select Feldern miteinander und mit dem Button verknüpfen-->
+<!--Ziel: Information in den Select Feldern miteinander und mit dem Button verknüpfen-->
 
 <!--Query zur Verknüpfung der beiden Select Felder und dem Button-->
 <script type="text/javascript" charset="utf-8">
