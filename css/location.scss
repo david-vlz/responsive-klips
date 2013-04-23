@@ -24,6 +24,7 @@
 
 // Gebäudeliste
 #gebaeudeliste { 
+	font-size: 14px;
 	thead { font-weight: bold; }
 
 	// DataTables Sort Arrows
@@ -52,17 +53,21 @@
 		outline: none;
 	}
 
-}
+	// Spalten
+	.gebnr { min-width: 55px; }
 
-@media screen and (max-width: 600px) {
-	.zuordnung { display: none; }
-}
-@media screen and (max-width: 400px) {
-	.adresse { display: none; }
+	@media screen and (max-width: 640px) {
+		.zuordnung { display: none; }
+	}
+	@media screen and (max-width: 400px) {
+		.adresse { display: none; }
+	}
+
 }
 
 // Gebäude-Einzelansicht
 #einzelansicht {
+	font-size: 14px;
 	@media screen and (min-width: 601px) {
 		width: 70%;
 	}

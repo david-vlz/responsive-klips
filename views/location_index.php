@@ -10,7 +10,7 @@
 <table id="gebaeudeliste" class="table table-striped">
 	<thead>
 		<tr>
-			<td>Geb.nr.</td>
+			<td class="gebnr">Geb.nr.</td>
 			<td class="zuordnung">Zuordnung</td>
 			<td>Name</td>
 			<td class="adresse">Straße</td>
