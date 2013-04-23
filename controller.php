@@ -36,81 +36,81 @@
 
 			if (array_key_exists('controller', $params)) {
 			
-			if ($params['controller'] == 'student') {
-				if ($params['action'] == 'index') {
-					$content = new Template(
-						$this->VIEWS_DIR . 'student_index_example.php', 
-						Array('students' => $this->objects['student'])
-					);
-				}
-			}
-
-			else if ($params['controller'] == 'data') {
-				if ($params['action'] == 'index') {
-					$content = new Template(
-						$this->VIEWS_DIR . 'course_index.php', 
-						Array('courses' => $this->objects['course'])
-					);
-				}
-			}
-
-			else if ($params['controller'] == 'institute') {
-				if ($params['action'] == 'index') {
-					$content =new Template (
-						$this->VIEWS_DIR . 'guide_index.php',
-						Array('department' => $this->objects['department'])
-					);
-				}
-				if ($params['action'] == 'show') {
-					$object = $this->objectFactory->getObject("Guide", (int) $params['id']);
-					$content = new Template ($this->VIEWS_DIR . 'guide_show.php', Array('institute' => $object, 'course' => $object, 'degree' => $object)
-					);
-				}
-			}
-			else if ($params['controller'] == 'search_major') {
-				if ($params['action'] == 'index') {
-					$content = new Template (
-						$this->VIEWS_DIR . 'search_major.php',
-						Array('major' => $this->objects['major'])
-					);
-				}
-				if ($params['action'] == 'show') {
-					$object = $this->objectFactory->getObject("Major", (int) $params['id']);
-					$content = new Template ($this->VIEWS_DIR . 'search_major_show.php', Array('major' => $object, 'minor' => $object, 'course' => $object)
-					);
-				}
-			}
-
-			// Controller für Location ^stefan
-			else if ($params['controller'] == 'location') {
-
-				// Übersicht aller Gebäude
-				if ($params['action'] == 'index') {
-					$content = new Template(
-						$this->VIEWS_DIR . 'location_index.php', 
-						Array('location' => $this->objects['location'])
-					);
+				if ($params['controller'] == 'student') {
+					if ($params['action'] == 'index') {
+						$content = new Template(
+							$this->VIEWS_DIR . 'student_index_example.php', 
+							Array('students' => $this->objects['student'])
+						);
+					}
 				}
 
-				// Einzelansicht für ein Gebäude
-		        if ($params['action'] == 'show') {
+				else if ($params['controller'] == 'data') {
+					if ($params['action'] == 'index') {
+						$content = new Template(
+							$this->VIEWS_DIR . 'course_index.php', 
+							Array('courses' => $this->objects['course'])
+						);
+					}
+				}
 
-		         $object = $this->objectFactory->getObject("Location", (int) $params['id']);
-		         $content = new Template($this->VIEWS_DIR . 'location_show.php', Array("location" => $object) );
-		        }
-		    }
+				else if ($params['controller'] == 'institute') {
+					if ($params['action'] == 'index') {
+						$content =new Template (
+							$this->VIEWS_DIR . 'guide_index.php',
+							Array('department' => $this->objects['department'])
+						);
+					}
+					if ($params['action'] == 'show') {
+						$object = $this->objectFactory->getObject("Guide", (int) $params['id']);
+						$content = new Template ($this->VIEWS_DIR . 'guide_show.php', Array('institute' => $object, 'course' => $object, 'degree' => $object)
+						);
+					}
+				}
+				else if ($params['controller'] == 'search_major') {
+					if ($params['action'] == 'index') {
+						$content = new Template (
+							$this->VIEWS_DIR . 'search_major.php',
+							Array('major' => $this->objects['major'])
+						);
+					}
+					if ($params['action'] == 'show') {
+						$object = $this->objectFactory->getObject("Major", (int) $params['id']);
+						$content = new Template ($this->VIEWS_DIR . 'search_major_show.php', Array('major' => $object, 'minor' => $object, 'course' => $object)
+						);
+					}
+				}
 
-		    // Controller für Kurse ^david
-		    else if ($params['controller'] == 'course') {
+				// Controller für Location ^stefan
+				else if ($params['controller'] == 'location') {
 
-		    	// Kurs-Einzelansicht
-		    	if ($params['action'] == 'show') {
-		    		$content = new Template(
-		    			$this->VIEWS_DIR . 'course_show.php',
-		    			Array('course' => $this->objectFactory->getObject("Course", (int) $params['id']))
-		    		);
-		    	}
-		    }
+					// Übersicht aller Gebäude
+					if ($params['action'] == 'index') {
+						$content = new Template(
+							$this->VIEWS_DIR . 'location_index.php', 
+							Array('location' => $this->objects['location'])
+						);
+					}
+
+					// Einzelansicht für ein Gebäude
+			        if ($params['action'] == 'show') {
+
+			         $object = $this->objectFactory->getObject("Location", (int) $params['id']);
+			         $content = new Template($this->VIEWS_DIR . 'location_show.php', Array("location" => $object) );
+			        }
+			    }
+
+			    // Controller für Kurse ^david
+			    else if ($params['controller'] == 'course') {
+
+			    	// Kurs-Einzelansicht
+			    	if ($params['action'] == 'show') {
+			    		$content = new Template(
+			    			$this->VIEWS_DIR . 'course_show.php',
+			    			Array('course' => $this->objectFactory->getObject("Course", (int) $params['id']))
+			    		);
+			    	}
+			    }
 
 			}
 
