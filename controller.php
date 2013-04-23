@@ -13,12 +13,13 @@
 
 		private $VIEWS_DIR = './views/';
 
-		private $currentUser; // ungenutzt
+		private $currentUser;
 		
-		function __construct($getParameters, $postParameters) {
+		function __construct($getParameters, $postParameters, $userId) {
 			$this->params = array_merge($getParameters, $postParameters);
 			$this->objectFactory = new ObjectFactory;
 			$this->objects = $this->objectFactory->loadAllFromFiles();
+			$this->currentUser = $this->objectFactory->getObject("Student", $userId);
 		}
 
 		function initPageView() {
@@ -27,7 +28,7 @@
 
 			// Templates für die Hauptseitenelemente vorbereiten
 			$header = new Template($this->VIEWS_DIR . 'header.php', null);
-			$sidebar = new Template($this->VIEWS_DIR . 'sidebar.php', null);
+			$sidebar = new Template($this->VIEWS_DIR . 'sidebar.php', Array('user' => $this->currentUser));
 
 			// Template für den Inhalt vorbereiten
 			// abhängig von den Parametern in $this->params wird dafür ein
@@ -137,7 +138,8 @@
 			$main = new Template($this->VIEWS_DIR . 'main.php',
 				Array('header' => $header,
 					  'sidebar' => $sidebar,
-					  'content' => $content
+					  'content' => $content,
+					  'user' => $this->currentUser
 					  #'footer' => $footer
 				)
 			);

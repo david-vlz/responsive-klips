@@ -1,6 +1,3 @@
-<ul class="breadcrumb">
-  <li><a href="index.php">Startseite</a></li>
-</ul>
 
 <h3>Ein bi&szlig;chen Inhalt</h3>
 <p>
