@@ -3,13 +3,20 @@
 	$gebaeude = $course->gebaeude[0];
 ?>
 
-<h2><?= $course->titel ?></h2>
+<ul class="breadcrumb">
+	<li>Vorlesungsverzeichnis <span class="divider">/</span></li>
+	<li><a href="index.php?controller=course&action=show&amp;id=<?= $course->id ?>"><?= $course->titel ?></a></li>
+</ul>
 
-<span class="muted course short-info">
+<h2 id="course-title"><?= $course->titel ?></h2>
+
+<a href="index.php?controller=course&amp;action=join&amp;id=<?= $course->id ?>" class="btn btn-small btn-primary pull-right" type="button">Belegen</a>
+
+<div id="short-info" class="muted">
 	<?= $course->art ?> /
 	<?= $course->semester ?> /
 	<a href="mailto:<?= $course->mail ?>"><?= $course->lehrperson ?></a>
-</span>
+</div>
 
 <div class="course-info-field row-fluid">
 	<div class="span2">
