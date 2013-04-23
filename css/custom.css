@@ -82,6 +82,14 @@ h2 {
   font-size: 24px;
 }
 
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 17px;
+}
+
 .breadcrumb {
   color: #999;
 }
