@@ -1,73 +1,51 @@
-<h4>Vorlesungsverzeichnis Sommersemester 2013</h4>
+ï»¿<!--Ziel: Darstellung der Institute in einem tabbable-->
+
+<ul class="breadcrumb"id="bcrumb">
+	<li><a href="#">Vorlesungsverzeichnis</a> <span class="divider">/</span></li>
+	<li class="acitve">nach Einrichtungen</li>
+</ul>
+
+<h2 id="headline">Vorlesungsverzeichnis Sommersemester 2013</h2>
+
+<!--tabbable zur Darstellung der FakultÃ¤ten-->
+<div id="guide_index">
           <div class="tabbable tabs-left"> 
               <ul class="nav nav-tabs" id="myTab">
-                <li class="disabled"><a href="<!--#humanwissenschaftliche-->" data-toggle="tab">Humanwissenschaftliche Fakultät</a></li>
-                <li class="active"><a href="#mathematische" data-toggle="tab">Mathematische Fakultät</a></li>
-                <li class="disabled"><a href="<!--#medizinische-->" data-toggle="tab">Medizinische Fakultät</a></li>
-				<li><a href="#philosophische" data-toggle="tab">Philosophische Fakultät</a></li>
-				<li class="disabled"><a href="<!--#rechtswissenschaftliche-->" data-toggle="tab">Rechtswissenschaftliche Fakultät</a></li>
-				<li><a href="#wirtschaftswissenschaftliche" data-toggle="tab">Wirtschaftswissenschaftliche Fakultät</a></li>
-				<li class="disabled"><a href="<!--#profcenter-->" data-toggle="tab">Professional Center</a></li>
-				<li class="disabled"><a href="<!--#sonstiges-->" data-toggle="tab">Veranstaltungen für Hörer aller Fakultäten</a></li>
+                <li><a href="#0" data-toggle="tab">Humanwissenschaftliche FakultÃ¤t</a></li>
+                <li><a href="#1" data-toggle="tab">Mathematische FakultÃ¤t</a></li>
+                <li><a href="#" data-toggle="tab">Medizinische FakultÃ¤t</a></li>
+				<li><a href="#2" data-toggle="tab">Philosophische FakultÃ¤t</a></li>
+				<li><a href="#" data-toggle="tab">Rechtswissenschaftliche FakultÃ¤t</a></li>
+				<li><a href="#3" data-toggle="tab">Wirtschaftswissenschaftliche FakultÃ¤t</a></li>
+				<li><a href="#" data-toggle="tab">Professional Center</a></li>
+				<li><a href="#" data-toggle="tab">Veranstaltungen fÃ¼r HÃ¶rer aller FakultÃ¤ten</a></li>
 			  </ul>
-          
-		  <div class="tab-content">
-                <div class="tab-pane" id="humanwissenschaftliche">
-				  <p>Fächer der humanwissenschaftlichen Fakultät</p>
-                </div>
-                <div class="tab-pane active" id="mathematische">
-				<p> Hier kommen die Institute der mathematischen Fakultät hin, 
-				die Department als Objekt übergeben werden</p>
-                </div>
-                <div class="tab-pane" id="medizinische">
-                  <p>Fächer der medizinischen Fakultät</p>
-                </div>
-				<div class="tab-pane" id="philosophische">
-                 <? foreach($this->institutes as $guide) { ?>
-							<p><a href='http://localhost/GUI/index.php?controller=test&action=index'><?echo $guide->name?></a></p>
-						<? foreach($guide->courses as $course) {?>
-							<p style="margin-left:15px"><?= $course->titel?></p>
-							<!--<p style="margin-left:15px"></?= $course->beschreibung?></p>-->
-						<?}?>
-				  <?}?>
-                </div>
-				<div class="tab-pane" id="rechtswissenschaftliche">
-                  <p>Fächer der rechtswissenschaftlichen Fakultät</p>
-                </div>
-				<div class="tab-pane" id="wirtschaftswissenschaftliche">
-                  <p> Hier kommen die Institute der wirtschaftswissenschaftlichen Fakultät hin, 
-				die Department als Objekt übergeben werden</p>
-                </div>
-				<div class="tab-pane" id="profcenter">
-                  <p>Veranstaltungen des Professional Centers</p>
-                </div>
-				<div class="tab-pane" id="sonstiges">
-                  <p>Veranstaltungen für Hörer anderer Fakultäten</p>
-                </div>
 				
-          </div>
-		  <script>
-		  $(function() {
-		  $('#myTab a:last').tab('show');
-		  })
-		  </script>
-          </div>
-
-       <!-- Schleife, die alle Fakultät aufruft -->
+<div class="tab-content">
+<!-- Schleife, die alle FakultÃ¤ten aufruft -->
 <? foreach($this->department as $department) { ?>
-	<h3><?= $department->name; ?></h3>
-	<p>ID: <?= $department->id; ?></p>
-
-	<!-- Schleife, die die jeweiligen Institute aufliste -->
-	<? foreach($department->institutes as $institute) { ?>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Institut: <?= $institute->name; ?></p>
-
-		<!-- Schleife, die die jeweiligen Kurse anzeigt -->
-		<? foreach($institute->courses as $course) { ?>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kurs: <?= $course->titel; ?>, Dozent: <?= $course->lehrperson; ?></p>
-		<? } ?>
-
-	<? } ?>
-
+	<div class="tab-pane" id="<?= $department->id; ?>">
+				<!--Schleife, die alle Institute aufruft-->
+				<? foreach($department->institutes as $institute) { ?>
+						<ul class="content-tabs">
+						<a href="index.php?controller=institute&action=show&id=<?= $institute->id; ?>" ><?= $institute->name; ?></a>
+						</ul>
+				<? } ?>
+	</div>
 <? } ?>
-		  
+</div>
+</div>
+</div>
+
+<!--Query, die die MenÃ¼punkte miteinander verlinkt-->
+<script>
+$(function() {
+$('#myTab a:last').tab('show');
+})
+</script>
+
+
+
+
+
+

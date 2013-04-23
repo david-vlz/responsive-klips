@@ -51,27 +51,17 @@
 					);
 				}
 			}
-			else if ($params['controller'] == 'course') {
+
+			else if ($params['controller'] == 'institute') {
 				if ($params['action'] == 'index') {
 					$content =new Template (
 						$this->VIEWS_DIR . 'guide_index.php',
-						Array('departments' => $this->objects['department'])
+						Array('department' => $this->objects['department'])
 					);
 				}
-			}
-			/*else if ($params['controller'] == 'course') {
-				if ($params['action'] == 'index') {
-					$content =new Template (
-						$this->VIEWS_DIR . 'guide_index.php',
-						Array('subjects' => $this->objects['department'])
-					);
-				}
-			}*/
-			else if ($params['controller'] == 'test') {
-				if ($params['action'] == 'index') {
-					$content =new Template (
-						$this->VIEWS_DIR . 'new_template.php',
-						Array('subjects' => $this->objects['department'])
+				if ($params['action'] == 'show') {
+					$object = $this->objectFactory->getObject("Guide", (int) $params['id']);
+					$content = new Template ($this->VIEWS_DIR . 'guide_show.php', Array('institute' => $object, 'course' => $object, 'degree' => $object)
 					);
 				}
 			}
@@ -79,7 +69,12 @@
 				if ($params['action'] == 'index') {
 					$content = new Template (
 						$this->VIEWS_DIR . 'search_major.php',
-						Array()
+						Array('major' => $this->objects['major'])
+					);
+				}
+				if ($params['action'] == 'show') {
+					$object = $this->objectFactory->getObject("Major", (int) $params['id']);
+					$content = new Template ($this->VIEWS_DIR . 'search_major_show.php', Array('major' => $object, 'minor' => $object, 'course' => $object)
 					);
 				}
 			}

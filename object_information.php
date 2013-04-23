@@ -3,7 +3,7 @@
 	/**
 	 * Feldinformationen für Objekten vom Typ Course
 	 */
-	$COURSE_INFO_AMOUNT = 10;
+	$COURSE_INFO_AMOUNT = 12;
 	
 	$courseInfo1 = Array(
 		"id" => 1,
@@ -17,6 +17,7 @@
 		"mail" => "mayer.piet@uni-koeln.de",
 		"sprache" => "DE",
 		"zeit" => "Di, 12:00-13:30 Uhr",
+		"modul"=> "BM 1",
 		"gebaeude" => 1,
 		"beschreibung" => "Sie lernen in diesem Kurs etwas über anorganische Chemie. Viel Erfolg dabei!",
 		"literatur" => "Mustermann, Max: Einführung in die Anorganische Chemie. Frankfurt/M., 1999.", 
@@ -27,7 +28,7 @@
 		"id" => 2,
 		"titel" => "Database Systems Advanced", 
 		"lehrperson" => "Bauer, Lucia",
-		"lvNummer" => "00001523",
+		"lvNummer" => "01523",
 		"art" => "Übung",
 		"semesterstunden" => 2,
 		"teilnehmeranzahl" => 40,
@@ -35,6 +36,7 @@
 		"mail" => "bauer.lucia@uni-koeln.de",
 		"sprache" => "EN",
 		"zeit" => "Fr, 14:00-15:30 Uhr",
+		"modul"=> "AM 1",
 		"gebaeude" => 4,
 		"beschreibung" => "This course is about database systems. Since it is a course for an advanced auditory the accomplishment of the first 
 					       module is obligatory.",
@@ -54,6 +56,7 @@
 		"mail" => "blumenfeld.jochen@uni-heidelberg.de",
 		"sprache" => "DE",
 		"zeit" => "Mo, 16:00-17:30 Uhr",
+		"modul"=> "BM 2",
 		"gebaeude" => 7,
 		"beschreibung" => "Die Schriftlichkeit betont an Texten, wie sie geschrieben worden sind und damit wie Zeichen je situativ anders Schrift werden. 
 		Während solche Fragen klassischerweise von der Editionsphilologie als Fragen der Textkonstitution behandelt worden sind, hat sich um Schriftkulturen
@@ -75,6 +78,7 @@
 		"mail" => "giotto.f@uni-koeln.de",
 		"sprache" => "DE",
 		"zeit" => "Fr, 10:00-11:30 Uhr",
+		"modul"=> "BM 3",
 		"gebaeude" => 7,
 		"beschreibung" => "Wir werden folgenden Fragen nachgehen: Wie und warum entsteht syntaktischer Wandel? Wie entfaltet sich syntaktischer Wandel? 
 		Kann man sprachübergreifende Gesetzmä&#946;igkeiten in der Entwicklung von grammatischen Prozessen bestimmen?",
@@ -94,6 +98,7 @@
 		"mail" => "elisa-wolferts@uni-koeln.de",
 		"sprache" => "DE",
 		"zeit" => "Mo, 10:00-11:30 Uhr",
+		"modul"=> "BM 4",
 		"gebaeude" => 7,
 		"beschreibung" => "Die Forschungen des französischen Philosophen und Soziologen Bruno Latour zeichnen sich durch Interdisziplinarität und Lebensnähe aus. 
 		Er gibt uns Gelegenheit, angespornt durch unsere Lektüre, die wissenschaftliche Praxis und folglich unser Fach Medienkulturwissenschaft zu reflektieren.",
@@ -113,6 +118,7 @@
 		"mail" => "bühnenbilder.d@uni-koeln.de",
 		"sprache" => "DE",
 		"zeit" => "Mi, 14:00-15:30 Uhr",
+		"modul"=> "AM 3",
 		"gebaeude" => 6,
 		"beschreibung" => "Wir bauen in diesem Kurs eine szenische Landschaft entweder zu Hamlet oder der Erwartung.",
 		"literatur" => "Dünne, Jörg / Günzel, Stephan (Hg.): Raumtheorie. Grundlagentexte aus Philosophie und Kulturwissenschaften. Frankfurt/M., 2006", 
@@ -131,6 +137,7 @@
 		"mail" => "schreiber-herbert@uni-koeln.de",
 		"sprache" => "DE",
 		"zeit" => "Di, 12:00-13:30 Uhr",
+		"modul"=> "AM 1",
 		"gebaeude" => 5,
 		"beschreibung" => "Lange Zeit galt populäre Musik aus Ostasien vielen als Inbegriff unkreativen Kopistentums. 
 		Bis in die 1990er Jahre nahm man in anderen Teilen der Welt dementsprechend auch kaum Notiz von Interpreten aus China, 
@@ -152,7 +159,9 @@
 		"semester" => "SoSe2013",
 		"mail" => "driouch@uni-koeln.de",
 		"sprache" => "Arab.",
-		"zeit" => "Di, 8:00-9:30, Do, 8:00-9:30",
+		"zeit" => "Di, 8:00-9:30, 
+				   Do, 8:00-9:30",
+		"modul"=> "BM 2",
 		"gebaeude" => 6,
 		"beschreibung" => "Der zweite Grundkurs in Arabisch baut auf dem Kurs im WiSe2012/13 auf. Ein Bestehen des Vorgängerkurses ist daher verpflichtend.",
 		"literatur" => " Eckehard Schulz, Modernes Hocharabisch. Lehrbuch &amp; e-Edition. Mit einer Einführung in Hauptdialekte. 
@@ -171,7 +180,9 @@
 		"semester" => "SoSe2013",
 		"mail" => "littemann.a@uni-koeln.de",
 		"sprache" => "DE",
-		"zeit" => "Di, 8:00-9:30 Uhr, Fr, 8:00-9:30 Uhr",
+		"zeit" => "Di, 8:00-9:30 Uhr, 
+				   Fr, 8:00-9:30 Uhr",
+		"modul"=> "BM 3",
 		"gebaeude" => 4,
 		"beschreibung" => "Die  Vorlesung 'Lineare Algebra II' ist der zweite Teil einer zweisemestrigen Vorlesung, 
 		die obligatorisch für alle Studienanfänger mit den Studienzielen Bachelor/Master in Mathematik und  Wirtschaftsmathematik ist. 
@@ -192,11 +203,53 @@
 		"semester" => "SoSe2013",
 		"mail" => "humboldt-a@uni-koeln.de",
 		"sprache" => "DE",
-		"zeit" => "Mo, 12:00-13:30 Uhr, Mi, 12:00-13:30 Uhr",
+		"zeit" => "Mo, 12:00-13:30 Uhr, 
+				   Mi, 12:00-13:30 Uhr",
+		"modul"=> "AM 2",
 		"gebaeude" => 3,
 		"beschreibung" => "Im Kurs wird eine kleine Einführung in die theorethische Informatik gegeben." ,
 		"literatur" => "Schöning, Uwe: Theoretische Informatik kurz gefasst, 5. Aufl., Spektrum 2008", 
 		//"appointments" => Array(1, 2)	
+	);
+	
+	
+	$courseInfo11 = Array(
+		"id" => 11,
+		"titel" => "Programmierpraktikum", 
+		"lehrperson" => "Bauer, Lucia",
+		"lvNummer" => "01524",
+		"art" => "Übung",
+		"semesterstunden" => 2,
+		"teilnehmeranzahl" => 40,
+		"semester" => "SS13",
+		"mail" => "bauer.lucia@uni-koeln.de",
+		"sprache" => "EN",
+		"zeit" => "Fr, 16:00-17:30 Uhr",
+		"modul"=> "AM 1",
+		"gebaeude" => 4,
+		"beschreibung" => "This course is the complementery training for 'Database Systems Advanced'.",
+		"literatur" =>"Ullman, Jeffrey: First course in database systems. Prentice-Hall, 1997.",
+		"appointments" => Array(2)
+	);
+	
+	$courseInfo12 = Array(
+		"id" => 12,
+		"titel" =>"User Interfaces und ihre Evaluierung", 
+		"lehrperson" => "Thaller, Prof. Dr. Manfred", 
+		"lvNummer" =>"42729",
+		"art" => "Hauptseminar", 
+		"semesterstunden" => 2,
+		"teilnehmeranzahl" =>40,
+		"semester" => "SS13",
+		"mail" => " ", 
+		"sprache" => "DE", 
+		"zeit" => "Do, 16:00-17:30 Uhr", 
+		"modul" => "AM 1", 
+		"gebäude" => 4,
+		"beschreibung" => "Ziel dieses Kurses ist es gegen Ende des Semesters ein User Interface für ein KLIPS - System zu entwerfen, welches 
+						   zu einem späteren Zeitpunkt vorgestellt werden soll.", 
+		"literatur" => "Wird im Kurs bekannt gegeben",
+		"appointments" => Array()
 	);
 	
 	
@@ -205,232 +258,348 @@
 	$guideInfo1 = Array(
 		"id" =>1,
 		"name" =>"Archäologisches Institut",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo2 = Array(
 		"id" =>2,
 		"name" =>"Englisches Seminar I",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo3 = Array(
 		"id" =>3,
 		"name" =>"Englisches Seminar II",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo4 = Array(
 		"id" =>4,
 		"name" =>"Historisches Institut",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
     );		
 	$guideInfo5 = Array(
 		"id" =>5,
 		"name" =>"Institut für Afrikanistik",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo6 = Array(
 		"id" =>6,
 		"name" =>"Institut für Altertumskunde",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo7 = Array(
 		"id" =>7,
 		"name" =>"Institut für deutsche Sprache und Literatur I",
-		"courses" => Array(3)
+		"courses" => Array(),
+		"degrees" => Array(3)
 	);
 	$guideInfo8 = Array(
 		"id" =>8,
 		"name" =>"Institut für deutsche Sprache und Literatur II",
-		"courses" => Array(4)
+		"courses" => Array(),
+		"degrees" => Array(3)
 	);
 	$guideInfo9 = Array(
 		"id" =>9,
 		"name" =>"Institut für Ethnologie",
-		"courses" => Array(7)
+		"courses" => Array(7),
+		"degrees" => Array()
 	);
 	$guideInfo10 = Array(
 		"id" =>10,
 		"name" =>"Institut für Evangelische Theologie",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo11 = Array(
 		"id" =>11,
 		"name" =>"Institut für Indologie und Tamilistik",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo12 = Array(
 		"id" =>12,
 		"name" =>"Institut für Katholische Theologie",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo13 = Array(
 		"id" =>13,
 		"name" =>"Institut für Linguistik",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo14 = Array(
 		"id" =>14,
 		"name" =>"Institut für Niederlandistik",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo15 = Array(
 		"id" =>15,
 		"name" =>"Institut für Skandivanistik/Fennistik",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo16 = Array(
 		"id" =>16,
 		"name" =>"Institut für Medienkultur- und Theater",
-		"courses" => Array(5,6)
+		"courses" => Array(5,6),
+		"degrees" => Array(5)
 	);
 	$guideInfo17 = Array(
 		"id" =>17,
 		"name" =>"Institut für Ur- und Frühgeschichte",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo18 = Array(
 		"id" =>18,
 		"name" =>"Kunsthistorisches Institut",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo19 = Array(
 		"id" =>19,
 		"name" =>"Martin-Buber-Institut für Judaistik",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo20 = Array(
 		"id" =>20,
 		"name" =>"Musikwissenschaftliches Institut",
-		"courses" => Array(7)
+		"courses" => Array(7),
+		"degrees" => Array()
 	);
 	$guideInfo21 = Array(
 		"id" =>21,
 		"name" =>"Orientalisches Seminar",
-		"courses" => Array(8)
+		"courses" => Array(8),
+		"degrees" => Array(6)
 	);
 	$guideInfo22 = Array(
 		"id" =>22,
 		"name" =>"Ostasiatisches Seminar",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo23 = Array(
 		"id" =>23,
 		"name" =>"Philosophisches Seminar",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo24 = Array(
 		"id" =>24,
 		"name" =>"Romanisches Seminar",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo25 = Array(
 		"id" =>25,
 		"name" =>"Seminar für Ägyptologie",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo26 = Array(
 		"id" =>26,
 		"name" =>"Slavisches Institut",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo27 = Array(
 		"id" =>27,
-		"name" =>"Studiums Integrale",
-		"courses" => Array(1)
+		"name" =>"Studium Integrale",
+		"courses" => Array(1),
+		"degrees" => Array()
 	);
 	$guideInfo28 = Array(
 		"id" =>28,
 		"name" =>"Verbundstudiengänge",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo29 = Array(
 		"id" =>29, 
 		"name" =>"Mathematik/Informatik",
-		"courses" => Array(2,9,10)
+		"courses" => Array(2,9,10),
+		"degrees" => Array(1,2)
 	);
 	$guideInfo30 = Array(
 		"id" =>30, 
 		"name" =>"Physik",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo31 = Array(
 		"id" =>31, 
 		"name" =>"Didaktik der Mathematik und der Naturwissenschaften",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo32 = Array(
 		"id" =>32, 
 		"name" =>"Chemie",
-		"courses" => Array(1)
+		"courses" => Array(),
+		"degrees" => Array(4)
 	);
 	$guideInfo33 = Array(
 		"id" =>33, 
 		"name" =>"Geowissenschaften",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo34 = Array(
 		"id" =>34, 
 		"name" =>"Biologie",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo35 = Array(
 		"id" =>35, 
 		"name" =>"Informationsveranstaltungen",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo36 = Array(
 		"id" =>36, 
 		"name" =>"Betriebswirtschaftslehre",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo37 = Array(
 		"id" =>37, 
 		"name" =>"Volkswirtschaftslehre",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo38 = Array(
 		"id" =>38, 
 		"name" =>"Sozialwissenschaften",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo39 = Array(
 		"id" =>39, 
 		"name" =>"Zentrale Einrichtungen der Fakultät",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo40 = Array(
 		"id" =>40, 
 		"name" =>"CEMS MIM",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo41 = Array(
 		"id" =>41, 
 		"name" =>"Courses taught through English",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo42 = Array(
 		"id" =>42, 
 		"name" =>"Doktorandenkurs",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo43 = Array(
 		"id" =>43, 
 		"name" =>"Veranstaltungen anderer Fakultäten",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo44 = Array(
 		"id" =>44, 
 		"name" =>"Sonstige Veranstaltungen",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo45 = Array(
 		"id" =>45, 
 		"name" =>"Tutorien",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
 	);
 	$guideInfo46 = Array(
 		"id" =>46, 
 		"name" =>"CISU (Cologne International Summer University)",
-		"courses" => Array()
+		"courses" => Array(),
+		"degrees" => Array()
+	);
+	
+	$DEGREE_INFO_AMOUNT = 6;
+	
+	$degreeInfo1 = Array(
+	"id" => 1,
+	"name" => "Bachelor",
+	"courses" => Array(2,9,11)
+	);
+	
+	$degreeInfo2 = Array(
+	"id" => 2,
+	"name" => "Master",
+	"courses" => Array(10)
+	);
+	
+	$degreeInfo3 = Array(
+	"id" => 3,
+	"name" => "Magister",
+	"courses" => Array(3,4)
+	);
+	
+	$degreeInfo4 = Array(
+	"id" => 4, 
+	"name" => "Lehramt Chemie", 
+	"courses" => Array(1)
+	);
+	
+	$degreeInfo5 = Array (
+	"id" => 5, 
+	"name" => "Bachelor (1-Fach) - Medienwissenschaft",
+	"courses" => Array (5,6)
+	);
+	
+	$degreeInfo6 = Array (
+	"id" => 6, 
+	"name" => "Master (2-Fach)", 
+	"courses" => Array (8)
+	);
+
+	/**
+	 * Feldinformationen für Objekte vom Typ Major
+	 */
+	
+	$MAJOR_INFO_AMOUNT = 1;
+	
+	$majorInfo1 = Array(
+	"id" => 1, 
+	"majorNr" => 705,
+	"name" => "Medienwissenschaft (Medieninformatik)",
+	"minor" => Array (1,2)
+	);
+
+
+	/**
+	 * Feldinformationen für Objekte vom Typ Minor
+	 */
+	
+	$MINOR_INFO_AMOUNT = 2; 
+	
+	$minorInfo1 = Array(
+	"id" => 1, 
+	"name" => "Medienwissenschaft",
+	"courses" => Array(5,6)
+	);
+	
+	$minorInfo2 = Array(
+	"id" => 2, 
+	"name" => "Medieninformatik", 
+	"courses" => Array(12)
 	);
 	/**
 	 * Feldinformationen für Objekte vom Typ Student
@@ -496,24 +665,27 @@
 		"semester" => "SS13"
 	);
 
+
+	/* Feldinformationen für Objekte vom Typ Department */
+
 	$DEPARTMENT_INFO_AMOUNT = 3; 
 	
 	$departmentInfo1 = Array (
 		"id" => 1, 
 		"name" => "Mathematische Fakultät",
-		"institutes" => Array (29,30,31,32,33,34,27),
+		"institutes" => Array (29,30,31,32,33,34,27)
 	);
 	
 	$departmentInfo2 = Array (
 		"id" => 2, 
 		"name" => "Philosophische Fakultät",
-		"institutes" => Array (2,5,6),
+		"institutes" => Array (1,2,3,4,5,6,7,8,9,10,11,12,16,21,27,28)
 	);
 	
 	$departmentInfo3 = Array (
 		"id" => 3, 
 		"name" => "Wirtschafts-und Sozialwissenschaftliche Fakultät",
-		"institutes" => Array (35,36,37,38,39,40,41,42,43,44,45,46,27),
+		"institutes" => Array (35,36,37,38,39,40,41,42,43,44,45,46,27)
 	);
 
 	/**
