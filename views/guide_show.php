@@ -1,12 +1,12 @@
 ﻿<!--Ziel: Darstellung der Kurse in Abhängigkeit von den Instituten-->
 
-<ul class="breadcrumb" id="bcrumb">
-	<li><a href="#">Vorlesungsverzeichnis</a> <span class="divider">/</span></li>
+<ul class="breadcrumb">
+	<li>Vorlesungsverzeichnis <span class="divider">/</span></li>
 	<li><a href="index.php?controller=institute&action=index">nach Einrichtungen</a> <span class="divider">/</span></li>
-	<li class="acitve"><?= $this->institute->name?></li>
+	<li><a href="#"><?= $this->institute->name?></a></li>
 </ul>
 
-<h2 id="headline"><?= $this->institute->name?></h2>
+<h2><?= $this->institute->name?></h2>
 
 <!--collapse-Funktion für den Abschluss-->
 <?foreach($this->institute->degrees as $degree) { ?>

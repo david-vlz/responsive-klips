@@ -13,12 +13,12 @@
           });
 </script>
 
-<ul class="breadcrumb" id="bcrumb">
-	<li><a href="#">Vorlesungsverzeichnis</a> <span class="divider">/</span></li>
-	<li class="acitve">nach Studiengängen</li>
+<ul class="breadcrumb">
+	<li>Vorlesungsverzeichnis <span class="divider">/</span></li>
+	<li><a href="index.php?controller=search_major&action=index">nach Studiengängen</a></li>
 </ul>
 
-<h2 id="headline">Vorlesungsverzeichnis Sommersemester 2013</h2>
+<h2>Vorlesungsverzeichnis Sommersemester 2013</h2>
 
 <!--selectBox1: angestrebter Abschluss-->
 <div id="selectBox1">

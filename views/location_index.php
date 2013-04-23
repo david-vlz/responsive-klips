@@ -3,7 +3,7 @@
   <li><a href="index.php?controller=location&action=index">Gebäude</a></li>
 </ul>
 
-<h3>Gebäude <span class="volltext">der Universität zu Köln</span></h3>
+<h2>Gebäude <span class="volltext">der Universität zu Köln</span></h2>
 
 <p class="list_desc">Im folgenden finden Sie eine Liste der Gebäude der Universität zu Köln. Per Klick auf die verschiedenen Spaltenüberschriften kann die Sortierung der Liste geändert werden. Über das Suchfeld auf der rechten Seite können die Gebäude gefiltert werden.</p>
 

@@ -1,12 +1,12 @@
 ﻿<!--Ziel: Darstellung der Kurse der ausgewählten Studienfächer in Form einer Tabelle--> 
 
-<ul class="breadcrumb" id="bcrumb">
-	<li><a href="#">Vorlesungsverzeichnis</a> <span class="divider">/</span></li>
+<ul class="breadcrumb">
+	<li>Vorlesungsverzeichnis <span class="divider">/</span></li>
 	<li><a href="index.php?controller=search_major&action=index">nach Studiengängen</a><span class="divider">/</span></li>
-	<li class="active"><?= $this->major->majorNr?> <?= $this->major->name?></li>
+	<li><a href="#"><?= $this->major->majorNr?> <?= $this->major->name?></a></li>
 </ul>
 
-<h2 id="headline"><?= $this->major->name?></h2>
+<h2><?= $this->major->name?></h2>
 
 <!--Collapse-Funktion für die Studienfächer-->
 <?foreach($this->major->minor as $minor) { ?>

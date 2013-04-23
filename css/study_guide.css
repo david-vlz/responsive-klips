@@ -31,19 +31,19 @@ position: relative;
 left: 460px;
 bottom: 125px;
 }
+<<<<<<< HEAD
 #headline {
 position: relative;
 bottom: 20px;
 }
+=======
+
+>>>>>>> Breadcrumbs und Headlines angepasst
 /*-------------------------------------------------------------------------------
 	media screen -> 600px view
 --------------------------------------------------------------------------------*/
 
 @media (max-width: 600px) {
-	#headline {
-	font-size: 150%;
-	margin-bottom: -5px;
-	}
 	#kursliste thead {
 	font-size: 85%;
 	}
@@ -68,9 +68,6 @@ bottom: 20px;
 --------------------------------------------------------------------------------*/
 
 @media (max-width:550px) {
-	#headline {
-	font-size: 130%;
-	}
 	.tab-content {
 	float:none;
 	clear: both;
@@ -105,9 +102,6 @@ bottom: 20px;
 --------------------------------------------------------------------------------*/
 
 @media (max-width:450px) {
-	#headline {
-	font-size: 120%;
-	}
 	.modul {
 	display:none;
 	}
@@ -126,9 +120,6 @@ bottom: 20px;
 	media screen -> 400px view
 --------------------------------------------------------------------------------*/
 @media (max-width:400px) {
-	#headline {
-	font-size: 110%;
-	}
 	#kursliste tbody {
 	font-size: 75%;
 	}
