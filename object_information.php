@@ -8,7 +8,7 @@
 	$courseInfo1 = Array(
 		"id" => 1,
 		"titel" => "Anorganische Chemie", 
-		"lehrperson" => "Mayer, Piet",
+		"lehrperson" => "Piet Mayer",
 		"lvNummer" => "00123456",
 		"art" => "Übung",
 		"semesterstunden" => 2,
@@ -18,16 +18,16 @@
 		"sprache" => "DE",
 		"zeit" => "Di, 12:00-13:30 Uhr",
 		"modul"=> "BM 1",
-		"gebaeude" => 1,
+		"gebaeude" => Array(1),
 		"beschreibung" => "Sie lernen in diesem Kurs etwas über anorganische Chemie. Viel Erfolg dabei!",
 		"literatur" => "Mustermann, Max: Einführung in die Anorganische Chemie. Frankfurt/M., 1999.", 
-		"appointments" => Array(1)	// Hier kommen ids von Appointment Objekten rein, die werden später in diese Objekte übersetzt
+		"appointments" => Array(1)
 	);
 	
 	$courseInfo2 = Array(
 		"id" => 2,
 		"titel" => "Database Systems Advanced", 
-		"lehrperson" => "Bauer, Lucia",
+		"lehrperson" => "Lucia Bauer",
 		"lvNummer" => "01523",
 		"art" => "Übung",
 		"semesterstunden" => 2,
@@ -37,7 +37,7 @@
 		"sprache" => "EN",
 		"zeit" => "Fr, 14:00-15:30 Uhr",
 		"modul"=> "AM 1",
-		"gebaeude" => 4,
+		"gebaeude" => Array(4),
 		"beschreibung" => "This course is about database systems. Since it is a course for an advanced auditory the accomplishment of the first 
 					       module is obligatory.",
 		"literatur" =>"Ullman, Jeffrey: First course in database systems. Prentice-Hall, 1997.",
@@ -47,7 +47,7 @@
 	$courseInfo3 = Array(
 		"id" => 3,
 		"titel" => "Ästhetik der Schrift", 
-		"lehrperson" => "Blumenfeld, Dr. Jochen",
+		"lehrperson" => "Dr. Jochen Blumenfeld",
 		"lvNummer" => "40527",
 		"art" => "Hauptseminar",
 		"semesterstunden" => 2,
@@ -57,7 +57,7 @@
 		"sprache" => "DE",
 		"zeit" => "Mo, 16:00-17:30 Uhr",
 		"modul"=> "BM 2",
-		"gebaeude" => 7,
+		"gebaeude" => Array(7),
 		"beschreibung" => "Die Schriftlichkeit betont an Texten, wie sie geschrieben worden sind und damit wie Zeichen je situativ anders Schrift werden. 
 		Während solche Fragen klassischerweise von der Editionsphilologie als Fragen der Textkonstitution behandelt worden sind, hat sich um Schriftkulturen
 		in den letzten Jahrzehnten ein breites Spektrum kulturwissenschaftlicher Forschungen entwickelt.",
@@ -69,7 +69,7 @@
 	$courseInfo4 = Array(
 		"id" => 4,
 		"titel" => "Syntaktischer Wandel im Deutschen", 
-		"lehrperson" => "Giotto, Dr. Ferrero",
+		"lehrperson" => "Dr. Ferrero Giotto",
 		"lvNummer" => "40467",
 		"art" => "Proseminar",
 		"semesterstunden" => 2,
@@ -79,7 +79,7 @@
 		"sprache" => "DE",
 		"zeit" => "Fr, 10:00-11:30 Uhr",
 		"modul"=> "BM 3",
-		"gebaeude" => 7,
+		"gebaeude" => Array(7),
 		"beschreibung" => "Wir werden folgenden Fragen nachgehen: Wie und warum entsteht syntaktischer Wandel? Wie entfaltet sich syntaktischer Wandel? 
 		Kann man sprachübergreifende Gesetzmä&#946;igkeiten in der Entwicklung von grammatischen Prozessen bestimmen?",
 		"literatur" => "Salmons, J.: A History of German. Oxford: Oxford University Press, 2012", 
@@ -89,7 +89,7 @@
 	$courseInfo5 = Array(
 		"id" => 5,
 		"titel" =>"Bruno Latour und Medien", 
-		"lehrperson" => "Wolferts, Elisa",
+		"lehrperson" => "Elisa Wolferts",
 		"lvNummer" => "43502",
 		"art" => "Lektürekurs",
 		"semesterstunden" => 2,
@@ -99,7 +99,7 @@
 		"sprache" => "DE",
 		"zeit" => "Mo, 10:00-11:30 Uhr",
 		"modul"=> "BM 4",
-		"gebaeude" => 7,
+		"gebaeude" => Array(7),
 		"beschreibung" => "Die Forschungen des französischen Philosophen und Soziologen Bruno Latour zeichnen sich durch Interdisziplinarität und Lebensnähe aus. 
 		Er gibt uns Gelegenheit, angespornt durch unsere Lektüre, die wissenschaftliche Praxis und folglich unser Fach Medienkulturwissenschaft zu reflektieren.",
 		"literatur" => "Latour, Bruno: Der Berliner Schlüssel. Erkundungen eines Liebhabers der Wissenschaften [La clef de Berlin 1993]. Berlin 1996.", 
@@ -109,7 +109,7 @@
 	$courseInfo6 = Array(
 		"id" => 6,
 		"titel" => "Szenisches Arbeiten", 
-		"lehrperson" => "Bühnenbildner, Dr. Doktor",
+		"lehrperson" => "Dr. Doktor Bühnenbildner",
 		"lvNummer" => "43540",
 		"art" => "Seminar",
 		"semesterstunden" => 4,
@@ -119,7 +119,7 @@
 		"sprache" => "DE",
 		"zeit" => "Mi, 14:00-15:30 Uhr",
 		"modul"=> "AM 3",
-		"gebaeude" => 6,
+		"gebaeude" => Array(6),
 		"beschreibung" => "Wir bauen in diesem Kurs eine szenische Landschaft entweder zu Hamlet oder der Erwartung.",
 		"literatur" => "Dünne, Jörg / Günzel, Stephan (Hg.): Raumtheorie. Grundlagentexte aus Philosophie und Kulturwissenschaften. Frankfurt/M., 2006", 
 		//"appointments" => Array(1, 2)	
@@ -128,7 +128,7 @@
 	$courseInfo7 = Array(
 		"id" => 7,
 		"titel" => "Populäre Musik in China, Japan und Südkorea", 
-		"lehrperson" => "Schreiber, Prof. Dr. Herbert",
+		"lehrperson" => "Prof. Dr. Herbert Schreiber",
 		"lvNummer" => "43423",
 		"art" => "Seminar",
 		"semesterstunden" => 2,
@@ -138,7 +138,7 @@
 		"sprache" => "DE",
 		"zeit" => "Di, 12:00-13:30 Uhr",
 		"modul"=> "AM 1",
-		"gebaeude" => 5,
+		"gebaeude" => Array(5),
 		"beschreibung" => "Lange Zeit galt populäre Musik aus Ostasien vielen als Inbegriff unkreativen Kopistentums. 
 		Bis in die 1990er Jahre nahm man in anderen Teilen der Welt dementsprechend auch kaum Notiz von Interpreten aus China, 
 		Japan oder Südkorea. Spätestens der weltweite Hype, der nicht zuletzt auch in den anglophonen Mutterländern der popular music, 
@@ -151,7 +151,7 @@
 	$courseInfo8 = Array(
 		"id" => 8,
 		"titel" => "Arabisch II", 
-		"lehrperson" => "Driouch, Prof. Dr. Youssef",
+		"lehrperson" => "Prof. Dr. Youssef Driouch",
 		"lvNummer" => "42103a",
 		"art" => "Kurs",
 		"semesterstunden" => 4,
@@ -162,7 +162,7 @@
 		"zeit" => "Di, 8:00-9:30, 
 				   Do, 8:00-9:30",
 		"modul"=> "BM 2",
-		"gebaeude" => 6,
+		"gebaeude" => Array(6),
 		"beschreibung" => "Der zweite Grundkurs in Arabisch baut auf dem Kurs im WiSe2012/13 auf. Ein Bestehen des Vorgängerkurses ist daher verpflichtend.",
 		"literatur" => " Eckehard Schulz, Modernes Hocharabisch. Lehrbuch &amp; e-Edition. Mit einer Einführung in Hauptdialekte. 
 		1. Aufl., Leipzig: Edition Hamouda 2011, ISBN 978-3-940075-53-6", 
@@ -172,7 +172,7 @@
 	$courseInfo9 = Array(
 		"id" => 9,
 		"titel" => "Lineare Algebra II", 
-		"lehrperson" => "Littemann, Dr. Alexander",
+		"lehrperson" => "Dr. Alexander Littemann",
 		"lvNummer" =>"52003" ,
 		"art" => "Vorlesung",
 		"semesterstunden" => 4,
@@ -183,7 +183,7 @@
 		"zeit" => "Di, 8:00-9:30 Uhr, 
 				   Fr, 8:00-9:30 Uhr",
 		"modul"=> "BM 3",
-		"gebaeude" => 4,
+		"gebaeude" => Array(4),
 		"beschreibung" => "Die  Vorlesung 'Lineare Algebra II' ist der zweite Teil einer zweisemestrigen Vorlesung, 
 		die obligatorisch für alle Studienanfänger mit den Studienzielen Bachelor/Master in Mathematik und  Wirtschaftsmathematik ist. 
 		Übungsscheine werden aufgrund erfolgreicher Mitarbeit in den Übungen und einer bestandenen Klausur vergeben. Grundzüge der Linearen Algebra: 
@@ -195,7 +195,7 @@
 	$courseInfo10 = Array(
 		"id" => 10,
 		"titel" => "Einführung in die theorethische Informatik", 
-		"lehrperson" => "Humboldt, Andreas",
+		"lehrperson" => "Andreas Humboldt",
 		"lvNummer" => "52507",
 		"art" => "Vorlesung",
 		"semesterstunden" => 4,
@@ -206,7 +206,7 @@
 		"zeit" => "Mo, 12:00-13:30 Uhr, 
 				   Mi, 12:00-13:30 Uhr",
 		"modul"=> "AM 2",
-		"gebaeude" => 3,
+		"gebaeude" => Array(3),
 		"beschreibung" => "Im Kurs wird eine kleine Einführung in die theorethische Informatik gegeben." ,
 		"literatur" => "Schöning, Uwe: Theoretische Informatik kurz gefasst, 5. Aufl., Spektrum 2008", 
 		//"appointments" => Array(1, 2)	
@@ -216,7 +216,7 @@
 	$courseInfo11 = Array(
 		"id" => 11,
 		"titel" => "Programmierpraktikum", 
-		"lehrperson" => "Bauer, Lucia",
+		"lehrperson" => "Lucia Bauer",
 		"lvNummer" => "01524",
 		"art" => "Übung",
 		"semesterstunden" => 2,
@@ -226,7 +226,7 @@
 		"sprache" => "EN",
 		"zeit" => "Fr, 16:00-17:30 Uhr",
 		"modul"=> "AM 1",
-		"gebaeude" => 4,
+		"gebaeude" => Array(4),
 		"beschreibung" => "This course is the complementery training for 'Database Systems Advanced'.",
 		"literatur" =>"Ullman, Jeffrey: First course in database systems. Prentice-Hall, 1997.",
 		"appointments" => Array(2)
@@ -235,17 +235,17 @@
 	$courseInfo12 = Array(
 		"id" => 12,
 		"titel" =>"User Interfaces und ihre Evaluierung", 
-		"lehrperson" => "Thaller, Prof. Dr. Manfred", 
+		"lehrperson" => "Prof. Dr. Manfred Thaller", 
 		"lvNummer" =>"42729",
 		"art" => "Hauptseminar", 
 		"semesterstunden" => 2,
 		"teilnehmeranzahl" =>40,
 		"semester" => "SS13",
-		"mail" => " ", 
+		"mail" => "", 
 		"sprache" => "DE", 
 		"zeit" => "Do, 16:00-17:30 Uhr", 
 		"modul" => "AM 1", 
-		"gebäude" => 4,
+		"gebaeude" => Array(4),
 		"beschreibung" => "Ziel dieses Kurses ist es gegen Ende des Semesters ein User Interface für ein KLIPS - System zu entwerfen, welches 
 						   zu einem späteren Zeitpunkt vorgestellt werden soll.", 
 		"literatur" => "Wird im Kurs bekannt gegeben",

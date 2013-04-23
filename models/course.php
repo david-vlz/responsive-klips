@@ -2,7 +2,7 @@
 
 	class Course extends sessionData {
 	
-		var $connectsTo = Array();
+		var $connectsTo = Array("gebaeude" => "Location");
 		
 		var $titel;
 		
