@@ -1,17 +1,25 @@
+<ul class="breadcrumb">
+	<li>Meine Funktionen <span class="divider">/</span></li>
+	<li><a href="index.php?controller=course&action=index">Meine Kurse</a></li>
+</ul>
+
+
+<h2>Meine Kurse</h2>
+
 <? foreach($this->courses as $course) { ?>
 	
-	<h4><?= $course->titel ?></h4>
-	<p>Dozent: <?= $course->lehrperson  ?></p>
-	<p>Vorlesungsverzeichnisnummer: <?= $course->lvNummer  ?></p>
-	<p>Veranstaltungsart: <?= $course->art  ?></p>
-	<p>SWS: <?= $course->semesterstunden  ?></p>
-	<p>Max. Teilnehmeranzahl: <?= $course->teilnehmeranzahl  ?></p>
-	<p>Semester: <?= $course->semester  ?></p>
-	<p>Mail: <a href="mailto:#"><?= $course->mail  ?></a></p>
-	<p>Sprache: <?= $course->sprache  ?></p>
-	<p>Zeit: <?= $course->zeit  ?></p>
-	<p>Gebäude: <?= $course->gebaeude  ?></p>
-	<p>Beschreibung: <?= $course->beschreibung  ?></p>
-	<p>Literatur: <?= $course->literatur  ?></p>
-	<br/> <br/>
+	<div class="well well-small course-preview">
+
+		<a href="index.php?controller=course&amp;action=show&amp;id=<?= $course->id ?>" ><h3 id="course-title"><?= $course->titel ?></h3></a>
+
+		<a href="index.php?controller=course&amp;action=unsuscribe&amp;id=<?= $course->id ?>" class="btn btn-small btn-danger pull-right" type="button">Abmelden</a>
+
+		<div class="muted short-info">
+			<?= $course->art ?> /
+			<?= $course->semester ?> /
+			<a href="mailto:<?= $course->mail ?>"><?= $course->lehrperson ?></a>
+		</div>
+
+	</div>
+
 <? } ?>

@@ -9,7 +9,7 @@
 	<li><a href="index.php?controller=search_major&action=index">nach Studiengängen</a></li>
 	<li class="nav-header">Meine Funktionen</li>
 	<li><a href="#"><i class="icon-user"></i> <?= $this->user->name ?></a></li>
-	<li><a href="#">Stundenplan</a></li>
+	<li><a href="index.php?controller=course&amp;action=index">Meine Kurse</a></li>
 	<li><a href="index.php?controller=module&action=index">Prüfungsleistungen</a></li>
 	<li class="nav-header">Hilfe & Service</li>		
 	<li><a href="index.php?controller=location&action=index">Gebäude</a></li>

@@ -2,7 +2,7 @@
 	display:inline;
 }
 
-#short-info {
+.short-info {
 	margin-top: 20px;
 }
 
@@ -20,4 +20,9 @@
 
 .course-info ul > ul {
 	list-style-type: circle;
+}
+
+
+.course-preview {
+	margin-top: 30;
 }

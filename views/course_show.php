@@ -10,9 +10,9 @@
 
 <h2 id="course-title"><?= $course->titel ?></h2>
 
-<a href="index.php?controller=course&amp;action=join&amp;id=<?= $course->id ?>" class="btn btn-small btn-primary pull-right" type="button">Belegen</a>
+<a href="index.php?controller=course&amp;action=subscribe&amp;id=<?= $course->id ?>" class="btn btn-small btn-primary pull-right" type="button">Belegen</a>
 
-<div id="short-info" class="muted">
+<div class="muted short-info">
 	<?= $course->art ?> /
 	<?= $course->semester ?> /
 	<a href="mailto:<?= $course->mail ?>"><?= $course->lehrperson ?></a>
