@@ -33,6 +33,8 @@
 			// abhängig von den Parametern in $this->params wird dafür ein
 			// bestimmtes Template ausgewählt
 			$params = $this->params;
+
+			if (array_key_exists('controller', $params)) {
 			
 			if ($params['controller'] == 'student') {
 				if ($params['action'] == 'index') {
@@ -108,8 +110,9 @@
 		    			Array('course' => $this->objectFactory->getObject("Course", (int) $params['id']))
 		    		);
 		    	}
-
 		    }
+
+			}
 
 			// wenn kein bekannter Controller bekannt ist, wird der Inhalt der 
 			// Homepage geladen
@@ -121,8 +124,8 @@
 			$main = new Template($this->VIEWS_DIR . 'main.php',
 				Array('header' => $header,
 					  'sidebar' => $sidebar,
-					  'content' => $content,
-					  'footer' => $footer
+					  'content' => $content
+					  #'footer' => $footer
 				)
 			);
 			// Template für die gesamte Seite anzeigen, dabei wird das
