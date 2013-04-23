@@ -1,63 +1,92 @@
 /* Responsive Wrapper */
 @media screen and (min-width: 1024px) {
-	#wrapper {
-		width: 960px;
-	}
+  #wrapper {
+    width: 960px;
+  }
 }
-
 @media screen and (max-width: 1024px) {
-	#wrapper {
-		width: 93.75%;
-	}
+  #wrapper {
+    width: 93.75%;
+  }
+}
+@media screen and (max-width: 820px) {
+  #wrapper {
+    width: 100%;
+  }
 }
 
+#header {
+  margin-top: 2%;
+  background: white url("../img/skyline.png") no-repeat bottom right;
+}
+#header .logo {
+  float: left;
+  margin: 0 15px 0 0;
+}
+#header h1 {
+  font-size: 24px;
+  line-height: 32px;
+}
 @media screen and (max-width: 820px) {
-	#wrapper {
-		width: 100%;
-	}
-	.volltext { display: none; }
+  #header .volltext {
+    display: none;
+  }
 }
 @media screen and (min-width: 321px) {
-	.unikoeln { display: block; }
+  #header .unikoeln {
+    display: block;
+  }
 }
 @media screen and (max-width: 320px) {
-	.unikoeln { display: inline; }
-	.unikoeln:after { content: " - "; }
-	.breadcrumb { display: none; }
+  #header .unikoeln {
+    display: inline;
+  }
+  #header .unikoeln:after {
+    content: " - ";
+  }
 }
 
 #main {
-	margin-top: 2%;
+  margin-top: 2%;
+}
+
+#sidebar ul {
+  margin-bottom: 5px;
+  padding: 14px 19px 14px 19px;
+}
+@media screen and (min-width: 769px) {
+  #sidebar #menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #sidebar ul {
+    display: none;
+  }
+  #sidebar #menu {
+    margin-bottom: 5px;
+    padding: 10px 19px 10px 19px;
+    font-weight: bold;
+  }
 }
 
 #footer {
-	margin-top: 5%;
+  margin-top: 5%;
 }
-
 #footer h4 {
-	text-align: center;
+  text-align: center;
 }
 
-
-/* Header */
-#header { 
-	margin-top: 2%;
-	background: #fff url('../img/skyline.png') no-repeat bottom right;
-}
-.logo { 
-	float: left; 
-	margin: 0 15px 0 0;
-}
-#header h1 { 
-	font-size: 24px;
-	line-height: 32px;
+/* allgemeine Anpassungen */
+h2 {
+  font-size: 24px;
 }
 
 .breadcrumb {
-	color: #999;
+  color: #999;
 }
-
-
-/* allgemeine Anpassungen */
-
-h2 { font-size: 24px; }
+@media screen and (max-width: 768px) {
+  .breadcrumb {
+    display: none;
+  }
+}
