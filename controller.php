@@ -79,6 +79,18 @@
 				}
 			}
 
+			// Controller für Location ^mariantonietta
+			else if ($params['controller'] == 'module') {
+
+				if ($params['action'] == 'index') {
+					$content = new Template(
+						$this->VIEWS_DIR . 'module_index.php', 
+						Array('module' => $this->objects['module'])
+					);
+				}
+
+			}
+
 			// Controller für Location ^stefan
 			else if ($params['controller'] == 'location') {
 
