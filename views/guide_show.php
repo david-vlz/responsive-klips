@@ -36,7 +36,7 @@
 				<? foreach($degree->courses as $course) { ?>
 				<tr>
 					<td><?= $course->lvNummer?></td>
-					<td><a href='#'><?= $course->titel?></a></td>
+					<td><a href="index.php?controller=course&amp;action=show&amp;id=<?= $course->id ?>"><?= $course->titel?></a></td>
 					<td><?= $course->zeit?></td>
 					<td class="art"><?= $course->art?></td>
 					<td class="modul"><?= $course->modul?></td>
