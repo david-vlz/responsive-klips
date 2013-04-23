@@ -24,23 +24,21 @@
 		<table id="kursliste" class="table table-striped">
 			<thead>
 				<tr>
-					<td>Vrst-nr.</td>
 					<td>Veranstaltungstitel</td>
 					<td>Uhrzeit</td>
 					<td class="art">Veranstaltungsart</td>
 					<td class="modul">Modul</td>
-					<td class="gebäude">Gebäude</td>
+					<td>Gebäude</td>
 				</tr>
 			</thead>
 			<tbody>
 				<? foreach($degree->courses as $course) { ?>
 				<tr>
-					<td><?= $course->lvNummer?></td>
 					<td><a href="index.php?controller=course&amp;action=show&amp;id=<?= $course->id ?>"><?= $course->titel?></a></td>
 					<td><?= $course->zeit?></td>
 					<td class="art"><?= $course->art?></td>
 					<td class="modul"><?= $course->modul?></td>
-					<td class="gebäude"><?= $course->gebaeude[0]->name?></td>
+					<td><a href="index.php?controller=location&action=show&id=<?= $course->gebaeude[0]->id?>"><?= $course->gebaeude[0]->name?></a></td>
 				<?}?>
 			</tbody>
 		</table>
