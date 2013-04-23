@@ -97,5 +97,11 @@ $adresse = $strasse . ", 50923 Köln";
         });
         
     }
+
+    function markerWechsel() {
+        map.setCenter(myPosition);
+    }
 </script>
 <div id="map_canvas"></div>
+
+<a onclick="markerWechsel()">ich</a>

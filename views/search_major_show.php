@@ -1,4 +1,4 @@
-﻿<!--Ziel: Darstellung der Kurse der ausgewählten Studienfächer in Form einer Tabelle--> 
+<!--Ziel: Darstellung der Kurse der ausgewählten Studienfächer in Form einer Tabelle--> 
 
 <ul class="breadcrumb">
 	<li>Vorlesungsverzeichnis <span class="divider">/</span></li>
