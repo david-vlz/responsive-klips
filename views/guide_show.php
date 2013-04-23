@@ -40,7 +40,7 @@
 					<td><?= $course->zeit?></td>
 					<td class="art"><?= $course->art?></td>
 					<td class="modul"><?= $course->modul?></td>
-					<td class="gebäude"><?= $course->gebaeude?></td>
+					<td class="gebäude"><?= $course->gebaeude[0]->name?></td>
 				<?}?>
 			</tbody>
 		</table>
