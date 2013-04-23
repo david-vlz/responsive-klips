@@ -637,6 +637,508 @@
 	
 	
 	
+	/**
+	 * Feldinfos für modul für Objekte vom Typ Modul für Medienkulturwissenschaften/Informationverarebitung
+	 */
+	
+	$VERANSTALTUNG_INFO_AMOUNT = 45;
+	
+	$veranstaltungInfo1 = Array(
+		"titel" => "Einführung in die Medienkulturwissenschaft",
+		"id" => 1,
+		"art" => "Ringvorlesung",
+		"nam" => "Medienkulturwissenschaftliche Grundlagen",
+		"cp" => "4",
+		"success" => "",
+		"mark" => 2.7
+	);
+	
+	$veranstaltungInfo2 = Array(
+		"titel" => "Einführung in die Medienkulturwissenschaft", 
+		"id" => 2,
+		"art" => "Vorlesung",
+		"nam" => "Lektürekurs: Klassiker der Medienkulturwissenschaft",
+		"cp" => "3",
+		"success" => true,
+		"mark" => 1.7
+	);
+	
+	$veranstaltungInfo3 = Array(
+		"titel" => "Klassiker der Medienkulturwissenschaft",
+		"id" => 3,
+		"art" => "Übung",
+		"nam" => "Einzelmedien und mediale Verbundsysteme",
+		"cp" => "3",
+		"success" => true,
+		"mark" => 2.0
+	);
+	
+	$veranstaltungInfo4 = Array(
+		"titel" => "Einführung in die Medienkulturwissenschaft",
+		"id" => 4,
+		"art" => "Ringvorlesung:",
+		"nam" => "Medienberufe",
+		"cp" => "2",
+		"success" => true,
+		"mark" => " "
+	);
+	
+	$veranstaltungInfo5 = Array(
+		"titel" => "Medien- und Kulturtheorie",
+		"id" => 5,
+		"art" => "Vorlesung mit Tutorium",
+		"nam" => "Genealogie und Pluralität der Medien- und Kulturtheorie",
+		"cp" => "2",
+		"success" => true,
+		"mark" => 2.0
+	);
+	
+	$veranstaltungInfo6 = Array(
+		"titel" => "Medien- und Kulturtheorie",
+		"id" => 6,
+		"art" => "Lektürekurs",
+		"nam" => "Klassiker der Medien- und Kulturtheorie",
+		"cp" => "3",
+		"success" => true,
+		"mark" => 2.3
+	);
+	
+	$veranstaltungInfo7 = Array(
+		"titel" => "Medien- und Kulturtheorie",
+		"id" => 7,
+		"art" => "Seminar",
+		"nam" => "Medien- und kulturtheoretische Analysen",
+		"cp" => "4",
+		"success" => true,
+		"mark" => 2.0
+	);
+	
+	$veranstaltungInfo8 = Array(
+		"titel" => "Grundlagen zur Mediengeschichte",
+		"id" => 8,
+		"art" => "Vorlesung mit Tutorium",
+		"nam" => "Historiographie der Medien",
+		"cp" => "2",
+		"success" => true,
+		"mark" => " "
+	);
+	
+	$veranstaltungInfo9 = Array(
+		"titel" => "Grundlagen zur Mediengeschichte",
+		"id" => 9,
+		"art" => "Quellen aus der Mediengeschichte",
+		"nam" => "Lektürekurs",
+		"cp" => "3",
+		"success" => true,
+		"mark" => 2.2
+	);
+	
+	$veranstaltungInfo10 = Array(
+		"titel" => "Grundlagen zur Mediengeschichte",
+		"id" => 10,
+		"art" => "Historische Medienanalyse in synchroner und diachroner Perspektive",
+		"nam" => "Übung",
+		"cp" => "4",
+		"success" => true,
+		"mark" => 1.7
+	);
+	
+	$veranstaltungInfo11 = Array(
+		"titel" => "Formate, Genres, Gattungen",
+		"id" => 11,
+		"art" => "Mediale Kategoridierungssyteme",
+		"nam" => "Vorlesung",
+		"cp" => "2",
+		"success" => true,
+		"mark" => " "
+	);
+	
+	$veranstaltungInfo12 = Array(
+		"titel" => "Formate, Genres, Gattungen",
+		"id" => 12,
+		"art" => "Codes und Konventionen medialer Produktion",
+		"nam" => "Lektürekurs",
+		"cp" => "3",
+		"success" => true,
+		"mark" => 2.2
+	);
+	
+	$veranstaltungInfo13 = Array(
+		"titel" => "Formate, Genres, Gattungen",
+		"id" => 13,
+		"art" => "Etablierung und Verlauf: Hybridisierung und Antiessentialität",
+		"nam" => "Übung",
+		"cp" => "4",
+		"success" => true,
+		"mark" => 3.0
+	);
+	
+	$veranstaltungInfo14 = Array(
+		"titel" => "Medienästhetik",
+		"id" => 14,
+		"art" => "Vorlesung",
+		"nam" => "Medienkunst und ihre Beshreibung",
+		"cp" => "2",
+		"success" => "false",
+		"mark" => " "
+	);
+	
+	$veranstaltungInfo15 = Array(
+		"titel" => "Medienästhetik",
+		"id" => 15,
+		"art" => "Übung",
+		"nam" => "Mimesis und Aisthesis: Schlüsselbegriffe medialer Kunsttheorie",
+		"cp" => "3",
+		"success" => false,
+		"mark" => " "
+	);
+	
+	$veranstaltungInfo16 = Array(
+		"titel" => "Medienästhetik",
+		"id" => 16,
+		"art" => "Seminar",
+		"nam" => "Form und Stil in den Medien",
+		"cp" => "5",
+		"success" => false,
+		"mark" => " "
+	);
+	
+	$veranstaltungInfo17 = Array(
+		"titel" => " Kulturelle Kommunikation und Repräsentation",
+		"id" => 17,
+		"art" => "Vorlesung",
+		"nam" => "Theorien der Kommunikation und Repräsentation",
+		"cp" => "2",
+		"success" => false,
+		"mark" => " "
+	);
+	
+	$veranstaltungInfo18 = Array(
+		"titel" => "Kulturelle Kommunikation und Repräsentation",
+		"id" => 18,
+		"art" => "Übung",
+		"nam" => "Kultur, Kommunikation, Gesellschaft",
+		"cp" => "3",
+		"success" => false,
+		"mark" => " "
+	);
+	
+	$veranstaltungInfo19 = Array(
+		"titel" => "Kulturelle Kommunikation und Repräsentation",
+		"id" => 19,
+		"art" => "Seminar",
+		"nam" => "Diskurs und Repräsentation",
+		"cp" => "5",
+		"success" => false,
+		"mark" => " "
+	);
+
+	$veranstaltungInfo20 = Array(
+		"titel" => "Medienpraxis",
+		"id" => 20,
+		"art" => "Seminar",
+		"nam" => "Praktisches Arbeiten mit Medien",
+		"cp" => "3",
+		"success" => false,
+		"mark" => " "
+	);
+	
+	$veranstaltungInfo21 = Array(
+		"titel" => "Medienpraxis",
+		"id" => 21,
+		"art" => "Übung",
+		"nam" => "Film-/ Videoproduktion",
+		"cp" => "3",
+		"success" => false,
+		"mark" => " "
+	);
+	
+	$veranstaltungInfo22 = Array(
+		"titel" => "Medienpraxis",
+		"id" => 22,
+		"art" => "Übung",
+		"nam" => "Szenisches Arbeiten",
+		"cp" => "3",
+		"success" => false,
+		"mark" => " "
+	);
+		
+	$veranstaltungInfo23 = Array(
+		"titel" => "Medienpraxis",
+		"id" => 23,
+		"art" => "Eventmanagement",
+		"nam" => "Übung",
+		"cp" => "3",
+		"success" => false,
+		"mark" => " "
+	);
+	
+	$veranstaltungInfo24 = Array(
+		"titel" => "Medienpraxis",
+		"id" => 24,
+		"art" => "Übung",
+		"nam" => "Austellungspraxis",
+		"cp" => "3",
+		"success" => false,
+		"mark" => " "
+	);
+	
+	$veranstaltungInfo25 = Array(
+		"titel" => "",
+		"id" => 25,
+		"art" => "Mündliche BA-Prüfung",
+		"nam" => "",
+		"cp" => "6",
+		"success" => true,
+		"mark" => 1.3
+	);
+	
+	$veranstaltungInfo26 = Array(
+		"titel" => "",
+		"id" => 26,
+		"art" => "BA-Arbeit",
+		"nam" => " ",
+		"cp" => "6",
+		"success" => false,
+		"mark" => " "
+	);
+		
+		
+/** // 	 * Feldinformationen für Objekte vom Typ Modul für Medienkulturwissenschaften/Informationverarebitung // */ 	
+
+// Das Format für alle Prüfungsmodule // 	
+
+	$veranstaltungInfo27 = Array( 
+		"titel" => "Basisinformationstechnologie", 
+		"id" => 27, 
+		"art" => "Proseminar", 
+		"nam" => "Basisinformationstechnologie I.", 
+		"cp" => "4", 
+		"success" => true, 
+		"mark" => 1.7 
+	); 
+	
+	$veranstaltungInfo28 = Array( 		
+		"titel" => "Basisinformationstechnologie", 
+		"id" => 28, 
+		"art" => "Proseminar", 
+		"nam" => "Basisinformationstechnologie II.", 
+		"cp" => "4", 
+		"success" => true, 
+		"mark" => 2.0 
+	); 
+		
+	$veranstaltungInfo29 = Array( 
+		"titel" => "Historisch Kulturwissenschaftliche Informationsverarbeitung", 
+		"id" => 29, 
+		"art" => "Proseminar", 
+		"nam" => "HK Informationsverarbeitung I.", 
+		"cp" => "4", 
+		"success" => true, 
+		"mark" => 1.7  	
+	); 
+		
+	$veranstaltungInfo30 = Array( 
+		"titel" => "Historisch Kulturwissenschaftliche Informationsverarbeitung", 
+		"id" => 30, 
+		"art" => "Proseminar", 
+		"nam" => "HK Informationsverarbeitung II.", 
+		"cp" => "4", 
+		"success" => true, 
+		"mark" => 2.1 
+	); 
+	
+	$veranstaltungInfo31 = Array( 
+		"titel" => "Historisch Kulturwissenschaftliche Informationsverarbeitung", 
+		"id" => 31, 
+		"art" => "Übung", 
+		"nam" => "Ausgewählte Technologien", 
+		"cp" => "2", 
+		"success" => true, 
+		"mark" => 2.3 
+	); 
+	
+	$veranstaltungInfo32 = Array( 
+	
+		"titel" => "Softwaretechnologie (C++)", 
+		"id" => 32, 
+		"art" => "Proseminar", 
+		"nam" => "Softwaretechnologie (C++) I.", 
+		"cp" => "4", 
+		"success" => true, 
+		"mark" => 2.0 
+	); 
+	
+	$veranstaltungInfo33 = Array( 
+		"titel" => "Softwaretechnologie (C++)", 
+		"id" => 33, 
+		"art" => "Proseminar", 
+		"nam" => "Softwaretechnologie (C++) II.", 
+		"cp" => "4", 
+		"success" => true, 
+		"mark" => 2.0
+	); 
+	
+	$veranstaltungInfo34 = Array( 
+		"titel" => "Softwaretechnologie (C++)", 
+		"id" => 34, 
+		"art" => "Übung", 
+		"nam" => "Programmierpraktikum (C++)", 
+		"cp" => "2", 
+		"success" => true, 
+		"mark" => 2.2 
+	); 
+	
+	$veranstaltungInfo35 = Array( 	
+		"titel" => "Humanities Computing vs. Humanities Computer Science I.", 
+		"id" => 35, 
+		"art" => "Seminar", 
+		"nam" => "Humanities Computer Science", 
+		"cp" => "5", 
+		"success" => true, 
+		"mark" => 1.7 
+	); 
+	
+	$veranstaltungInfo36 = Array( 
+		"titel" => "Humanities Computing vs. Humanities Computer Science I.", 
+		"id" => 36, 
+		"art" => "Übung", 
+		"nam" => "Anwendungsgebiet", 
+		"cp" => "3", 
+		"success" => false, 
+		"mark" => " "
+	); 
+		
+	$veranstaltungInfo37 = Array( 
+			"titel" => "Humanities Computing vs. Humanities Computer Science I.", 
+			"id" => 37, 
+			"art" => "Kolloquium", 
+			"nam" => "Humanities Computing", 
+			"cp" => "2", 
+			"success" => false,
+			"mark" => " " 	
+		); 
+		
+		$veranstaltungInfo38 = Array( 
+			"titel" => "Humanities Computing vs. Humanities Computer Science II.", 
+			"id" => 38, 
+			"art" => "Seminar", 
+			"nam" => "Humanities Computer Science", 
+			"cp" => "5", 
+			"success" => true, 
+			"mark" => 3.0 
+		); 
+		
+		$veranstaltungInfo39 = Array( 
+			"title" => "Humanities Computing vs. Humanities Computer Science II.", 
+			"id" => 39, 
+			"art" => "Übung", 
+			"nam" => "Anwendungsgebiet", 
+			"cp" => "3", 
+			"success" => "true",	
+			"mark" => " "
+		); 
+		
+		$veranstaltungInfo40 = Array( 
+			"titel" => "Humanities Computing vs. Humanities Computer Science II.", 
+			"id" => 40, 
+			"art" => "Vorlesung",
+			"nam" => "Medienkunst und ihre Beshreibung", 
+			"cp" => "2", 
+			"success" => true, 
+			"mark" => " " 	
+		); 
+		
+		$veranstaltungInfo41 = Array( 
+			"titel" => "Visuelle Programmierung", 
+			"id" => 41, 
+			"art" => "Seminar", 
+			"nam" => "Visuelle Programmierung I.", 
+			"cp" => "3", 
+			"success" => false, 
+			"mark" => " "	
+		);
+			
+		$veranstaltungInfo42 = Array( 
+			"titel" => "Visuelle Programmierung",
+			"id" => 42, 
+			"art" => "Seminar", 
+			"nam" => "Visuelle Programmierung II.",
+			"cp" => "5", 
+			"success" => false, 
+			"mark" => " "
+		);
+	
+		$veranstaltungInfo43 = Array( 
+			"titel" => "Visuelle Programmierung", 
+			"id" => 43, 
+			"art" => "Visuelle Programmierung I.", 
+			"nam" => "Vorlesung", 
+			"cp" => "2", 
+			"success" => false, 
+			"mark" => " "
+		);
+			
+		$veranstaltungInfo44 = Array( 		
+			"titel" => " ", 
+			"id" => 44, 
+			"art" => "Mündliche BA-Prüfung", 
+			"nam" => " ", 		
+			"cp" => "6", 
+			"success" => true, 
+			"mark" => 1.7 
+		); 
+		
+		$veranstaltungInfo45 = Array( 
+			"titel" => " ", 	
+			"id" => 45, 	
+			"art" => "Mündliche BA-Prüfung",
+			"nam" => "", 
+			"cp" => "6", 
+			"success" => false, 
+			"mark" => " "
+		); 
+			
+
+$MODULE_INFO_AMOUNT= 6;
+	
+	$moduleInfo1 = Array(
+		"id" => 1,
+		"titel" => "Basismodul 1",
+		"module" => Array(1, 2, 3)
+	);
+	
+	$moduleInfo2 = Array(
+		"id" => 2,
+		"titel" => "Basismodul 2",
+		"module" => Array(4, 5, 6)
+	);
+	
+	$moduleInfo3 = Array(
+		"id" => 3,
+		"titel" => "Basismodul 3",
+		"module" => Array(7, 8, 9)
+	);
+	
+	$moduleInfo4 = Array(
+		"id" => 4,
+		"titel" => "Basismodul 4",
+		"module" => Array(10, 11, 12)
+	);
+	
+	$moduleInfo5 = Array(
+		"id" => 5,
+		"titel" => "Aufbaumodul 1",
+		"modulee" => Array(13, 14, 15)
+	);
+	
+	$moduleInfo6 = Array(
+		"id" => 6,
+		"titel" => "Aufbaumodul 2",
+		"module" => Array(16, 17)
+	);
+
+
 	
 	/**
 	 * Feldinformationen für Objekte vom Typ Appointment

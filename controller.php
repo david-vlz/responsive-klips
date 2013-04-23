@@ -54,6 +54,7 @@
 					}
 				}
 
+				// Controller für Vorlesungsverzeichnis ^eugenie
 				else if ($params['controller'] == 'institute') {
 					if ($params['action'] == 'index') {
 						$content =new Template (
@@ -79,6 +80,18 @@
 						$content = new Template ($this->VIEWS_DIR . 'search_major_show.php', Array('major' => $object, 'minor' => $object, 'course' => $object)
 						);
 					}
+				}
+
+				// Controller für Location ^mariantonietta
+				else if ($params['controller'] == 'module') {
+
+					if ($params['action'] == 'index') {
+						$content = new Template(
+							$this->VIEWS_DIR . 'module_index.php', 
+							Array('module' => $this->objects['module'])
+						);
+					}
+
 				}
 
 				// Controller für Location ^stefan

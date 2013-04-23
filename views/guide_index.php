@@ -1,6 +1,6 @@
-﻿<!--Ziel: Darstellung der Institute in einem tabbable-->
+<!--Ziel: Darstellung der Institute in einem tabbable-->
 
-<ul class="breadcrumb">
+<ul class="breadcrumb"id="bcrumb">
 	<li><a href="#">Vorlesungsverzeichnis</a> <span class="divider">/</span></li>
 	<li class="acitve">nach Einrichtungen</li>
 </ul>
@@ -43,9 +43,3 @@ $(function() {
 $('#myTab a:last').tab('show');
 })
 </script>
-
-
-
-
-
-
