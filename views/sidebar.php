@@ -29,4 +29,3 @@
 	  	}
 	});
 </script>
->>>>>>> Sidebar repsonsive gemacht
