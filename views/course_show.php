@@ -8,7 +8,7 @@
 <span class="muted course short-info">
 	<?= $course->art ?> /
 	<?= $course->semester ?> /
-	<?= $course->lehrperson ?>
+	<a href="mailto:<?= $course->mail ?>"><?= $course->lehrperson ?></a>
 </span>
 
 <div class="course-info-field row-fluid">
