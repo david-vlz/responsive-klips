@@ -42,7 +42,7 @@ $adresse = $strasse . ", 50923 Köln";
 <!-- Google Maps JavaScript API v3 -->
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<?= $mapskey; ?>&sensor=true&callback=initialize"></script> <!-- API-Key mit IP Locking, wird nach Fertigstellung des Projekts deaktiviert -->
 <script type="text/javascript">
-	var geocoder, map;
+	var geocoder, map, myPosition;
  
     function initialize() {
 
@@ -50,19 +50,21 @@ $adresse = $strasse . ", 50923 Köln";
         geocoder = new google.maps.Geocoder();
         geocoder.geocode( { 'address': address}, function(results, status) {
 
+            building = results[0].geometry.location;
+
             if (status == google.maps.GeocoderStatus.OK) {
 
                 var myOptions = {
-                    zoom: 16,
-                    center: results[0].geometry.location,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                        zoom: 16,
+                        center: building,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
                 }
                 
                 map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
                 var marker = new google.maps.Marker({
-                            map: map,
-                            position: results[0].geometry.location
+                        map: map,
+                        position: building
                 });
 
                 // Eigenen Standpunkt bestimmen, wenn unterstützt
@@ -84,6 +86,8 @@ $adresse = $strasse . ", 50923 Köln";
 
                     });
 
+                    $("#map_buttons").show(); // Buttons zur Kartensteuerung anzeigen
+
                 }
                 else {
                     alert("Eigener Standort kann nicht bestimmt werden.");
@@ -98,10 +102,14 @@ $adresse = $strasse . ", 50923 Köln";
         
     }
 
-    function markerWechsel() {
-        map.setCenter(myPosition);
+    function button(auswahl) {
+        if (auswahl==1) { map.setCenter(myPosition); }
+        else if (auswahl==2) { map.setCenter(building); }
     }
 </script>
 <div id="map_canvas"></div>
 
-<a onclick="markerWechsel()">ich</a>
+<div id="map_buttons">
+    <button class="btn btn-small btn-primary" type="button" onclick="button(1)"><i class="icon-map-marker icon-white"></i> meine Position&nbsp;&nbsp;</button>
+    <button class="btn btn-small btn-danger" type="button" onclick="button(2)"><i class="icon-map-marker icon-white"></i> Gebäude&nbsp;&nbsp;</button>
+</div>

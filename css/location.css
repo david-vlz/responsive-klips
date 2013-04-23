@@ -6,6 +6,11 @@
   height: 300px;
 }
 
+#map_buttons {
+  margin: 5px 0 0 0;
+  display: none;
+}
+
 .list_desc {
   margin: 0 0 45px 0;
 }
