@@ -98,6 +98,19 @@
 		        }
 		    }
 
+		    // Controller für Kurse ^david
+		    else if ($params['controller'] == 'course') {
+
+		    	// Kurs-Einzelansicht
+		    	if ($params['action'] == 'show') {
+		    		$content = new Template(
+		    			$this->VIEWS_DIR . 'course_show.php',
+		    			Array('course' => $this->objectFactory->getObject("Course", (int) $params['id']))
+		    		);
+		    	}
+
+		    }
+
 			// wenn kein bekannter Controller bekannt ist, wird der Inhalt der 
 			// Homepage geladen
 			else {
