@@ -1,10 +1,16 @@
-<ul class="breadcrumb">
-	<li>Meine Funktionen <span class="divider">/</span></li>
-	<li><a href="index.php?controller=course&and;action=index">Meine Kurse</a></li>
-</ul>
+<? if ($this->includedInOtherTemplate) { ?> 
 
+	<h3>Kurse</h3>
 
-<h2>Meine Kurse</h2>
+<? } else { ?>
+
+	<ul class="breadcrumb">
+		<li>Meine Funktionen <span class="divider">/</span></li>
+		<li><a href="index.php?controller=course&and;action=index">Meine Kurse</a></li>
+	</ul>
+	<h2>Meine Kurse</h2>
+
+<? } ?>
 
 <? foreach($this->courses as $course) { ?>
 	

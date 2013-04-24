@@ -129,11 +129,34 @@
 			    	if ($params['action'] == 'index') {
 			    		$content = new Template(
 			    			$this->VIEWS_DIR . 'course_index.php',
-			    			Array('courses' => $this->currentUser->courses)
+			    			Array(
+			    				'courses' => $this->currentUser->courses,
+			    				'includedInOtherTemplate' => false
+			    			)
 			    		);
 			    	}
 
 			    }
+
+			    // Controller für Useransicht ^david
+			    else if ($params['controller'] == 'user') {
+			    	if ($params['action'] == 'show') {
+			    		$coursesTemplate = new Template(
+			    			$this->VIEWS_DIR . 'course_index.php',
+			    			Array(
+			    				'courses' => $this->currentUser->courses,
+			    				'includedInOtherTemplate' => true
+			    			)
+			    		);
+			    		$content = new Template(
+			    			$this->VIEWS_DIR . 'user_show.php',
+			    			Array(
+			    				'user' => $this->currentUser, 
+			    				'coursesTemplate' => $coursesTemplate
+			    			)
+			    		);
+				    }
+				}
 
 			}
 
