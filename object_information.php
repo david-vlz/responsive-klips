@@ -641,7 +641,7 @@
 	 * Feldinfos für modul für Objekte vom Typ Modul für Medienkulturwissenschaften/Informationverarebitung
 	 */
 	
-	$VERANSTALTUNG_INFO_AMOUNT = 45;
+	$VERANSTALTUNG_INFO_AMOUNT = 26;
 	
 	$veranstaltungInfo1 = Array(
 		"titel" => "Einführung in die Medienkulturwissenschaft",
@@ -649,17 +649,15 @@
 		"art" => "Ringvorlesung",
 		"nam" => "Medienkulturwissenschaftliche Grundlagen",
 		"cp" => "4",
-		"success" => "",
 		"mark" => 2.7
 	);
 	
 	$veranstaltungInfo2 = Array(
 		"titel" => "Einführung in die Medienkulturwissenschaft", 
 		"id" => 2,
-		"art" => "Vorlesung",
-		"nam" => "Lektürekurs: Klassiker der Medienkulturwissenschaft",
+		"art" => "Lektürekurs",
+		"nam" => "Klassiker der Medienkulturwissenschaft",
 		"cp" => "3",
-		"success" => true,
 		"mark" => 1.7
 	);
 	
@@ -669,7 +667,6 @@
 		"art" => "Übung",
 		"nam" => "Einzelmedien und mediale Verbundsysteme",
 		"cp" => "3",
-		"success" => true,
 		"mark" => 2.0
 	);
 	
@@ -679,7 +676,6 @@
 		"art" => "Ringvorlesung:",
 		"nam" => "Medienberufe",
 		"cp" => "2",
-		"success" => true,
 		"mark" => " "
 	);
 	
@@ -689,7 +685,6 @@
 		"art" => "Vorlesung mit Tutorium",
 		"nam" => "Genealogie und Pluralität der Medien- und Kulturtheorie",
 		"cp" => "2",
-		"success" => true,
 		"mark" => 2.0
 	);
 	
@@ -699,7 +694,6 @@
 		"art" => "Lektürekurs",
 		"nam" => "Klassiker der Medien- und Kulturtheorie",
 		"cp" => "3",
-		"success" => true,
 		"mark" => 2.3
 	);
 	
@@ -709,7 +703,6 @@
 		"art" => "Seminar",
 		"nam" => "Medien- und kulturtheoretische Analysen",
 		"cp" => "4",
-		"success" => true,
 		"mark" => 2.0
 	);
 	
@@ -719,7 +712,6 @@
 		"art" => "Vorlesung mit Tutorium",
 		"nam" => "Historiographie der Medien",
 		"cp" => "2",
-		"success" => true,
 		"mark" => " "
 	);
 	
@@ -729,7 +721,6 @@
 		"art" => "Quellen aus der Mediengeschichte",
 		"nam" => "Lektürekurs",
 		"cp" => "3",
-		"success" => true,
 		"mark" => 2.2
 	);
 	
@@ -739,7 +730,6 @@
 		"art" => "Historische Medienanalyse in synchroner und diachroner Perspektive",
 		"nam" => "Übung",
 		"cp" => "4",
-		"success" => true,
 		"mark" => 1.7
 	);
 	
@@ -749,7 +739,6 @@
 		"art" => "Mediale Kategoridierungssyteme",
 		"nam" => "Vorlesung",
 		"cp" => "2",
-		"success" => true,
 		"mark" => " "
 	);
 	
@@ -759,7 +748,6 @@
 		"art" => "Codes und Konventionen medialer Produktion",
 		"nam" => "Lektürekurs",
 		"cp" => "3",
-		"success" => true,
 		"mark" => 2.2
 	);
 	
@@ -769,7 +757,6 @@
 		"art" => "Etablierung und Verlauf: Hybridisierung und Antiessentialität",
 		"nam" => "Übung",
 		"cp" => "4",
-		"success" => true,
 		"mark" => 3.0
 	);
 	
@@ -779,7 +766,6 @@
 		"art" => "Vorlesung",
 		"nam" => "Medienkunst und ihre Beshreibung",
 		"cp" => "2",
-		"success" => "false",
 		"mark" => " "
 	);
 	
@@ -789,7 +775,6 @@
 		"art" => "Übung",
 		"nam" => "Mimesis und Aisthesis: Schlüsselbegriffe medialer Kunsttheorie",
 		"cp" => "3",
-		"success" => false,
 		"mark" => " "
 	);
 	
@@ -799,7 +784,6 @@
 		"art" => "Seminar",
 		"nam" => "Form und Stil in den Medien",
 		"cp" => "5",
-		"success" => false,
 		"mark" => " "
 	);
 	
@@ -809,7 +793,6 @@
 		"art" => "Vorlesung",
 		"nam" => "Theorien der Kommunikation und Repräsentation",
 		"cp" => "2",
-		"success" => false,
 		"mark" => " "
 	);
 	
@@ -819,7 +802,6 @@
 		"art" => "Übung",
 		"nam" => "Kultur, Kommunikation, Gesellschaft",
 		"cp" => "3",
-		"success" => false,
 		"mark" => " "
 	);
 	
@@ -829,7 +811,6 @@
 		"art" => "Seminar",
 		"nam" => "Diskurs und Repräsentation",
 		"cp" => "5",
-		"success" => false,
 		"mark" => " "
 	);
 
@@ -839,7 +820,6 @@
 		"art" => "Seminar",
 		"nam" => "Praktisches Arbeiten mit Medien",
 		"cp" => "3",
-		"success" => false,
 		"mark" => " "
 	);
 	
@@ -849,7 +829,6 @@
 		"art" => "Übung",
 		"nam" => "Film-/ Videoproduktion",
 		"cp" => "3",
-		"success" => false,
 		"mark" => " "
 	);
 	
@@ -859,7 +838,6 @@
 		"art" => "Übung",
 		"nam" => "Szenisches Arbeiten",
 		"cp" => "3",
-		"success" => false,
 		"mark" => " "
 	);
 		
@@ -869,7 +847,6 @@
 		"art" => "Eventmanagement",
 		"nam" => "Übung",
 		"cp" => "3",
-		"success" => false,
 		"mark" => " "
 	);
 	
@@ -879,7 +856,6 @@
 		"art" => "Übung",
 		"nam" => "Austellungspraxis",
 		"cp" => "3",
-		"success" => false,
 		"mark" => " "
 	);
 	
@@ -889,7 +865,6 @@
 		"art" => "Mündliche BA-Prüfung",
 		"nam" => "",
 		"cp" => "6",
-		"success" => true,
 		"mark" => 1.3
 	);
 	
@@ -899,244 +874,61 @@
 		"art" => "BA-Arbeit",
 		"nam" => " ",
 		"cp" => "6",
-		"success" => false,
 		"mark" => " "
 	);
 		
-		
-/** // 	 * Feldinformationen für Objekte vom Typ Modul für Medienkulturwissenschaften/Informationverarebitung // */ 	
-
-// Das Format für alle Prüfungsmodule // 	
-
-	$veranstaltungInfo27 = Array( 
-		"titel" => "Basisinformationstechnologie", 
-		"id" => 27, 
-		"art" => "Proseminar", 
-		"nam" => "Basisinformationstechnologie I.", 
-		"cp" => "4", 
-		"success" => true, 
-		"mark" => 1.7 
-	); 
-	
-	$veranstaltungInfo28 = Array( 		
-		"titel" => "Basisinformationstechnologie", 
-		"id" => 28, 
-		"art" => "Proseminar", 
-		"nam" => "Basisinformationstechnologie II.", 
-		"cp" => "4", 
-		"success" => true, 
-		"mark" => 2.0 
-	); 
-		
-	$veranstaltungInfo29 = Array( 
-		"titel" => "Historisch Kulturwissenschaftliche Informationsverarbeitung", 
-		"id" => 29, 
-		"art" => "Proseminar", 
-		"nam" => "HK Informationsverarbeitung I.", 
-		"cp" => "4", 
-		"success" => true, 
-		"mark" => 1.7  	
-	); 
-		
-	$veranstaltungInfo30 = Array( 
-		"titel" => "Historisch Kulturwissenschaftliche Informationsverarbeitung", 
-		"id" => 30, 
-		"art" => "Proseminar", 
-		"nam" => "HK Informationsverarbeitung II.", 
-		"cp" => "4", 
-		"success" => true, 
-		"mark" => 2.1 
-	); 
-	
-	$veranstaltungInfo31 = Array( 
-		"titel" => "Historisch Kulturwissenschaftliche Informationsverarbeitung", 
-		"id" => 31, 
-		"art" => "Übung", 
-		"nam" => "Ausgewählte Technologien", 
-		"cp" => "2", 
-		"success" => true, 
-		"mark" => 2.3 
-	); 
-	
-	$veranstaltungInfo32 = Array( 
-	
-		"titel" => "Softwaretechnologie (C++)", 
-		"id" => 32, 
-		"art" => "Proseminar", 
-		"nam" => "Softwaretechnologie (C++) I.", 
-		"cp" => "4", 
-		"success" => true, 
-		"mark" => 2.0 
-	); 
-	
-	$veranstaltungInfo33 = Array( 
-		"titel" => "Softwaretechnologie (C++)", 
-		"id" => 33, 
-		"art" => "Proseminar", 
-		"nam" => "Softwaretechnologie (C++) II.", 
-		"cp" => "4", 
-		"success" => true, 
-		"mark" => 2.0
-	); 
-	
-	$veranstaltungInfo34 = Array( 
-		"titel" => "Softwaretechnologie (C++)", 
-		"id" => 34, 
-		"art" => "Übung", 
-		"nam" => "Programmierpraktikum (C++)", 
-		"cp" => "2", 
-		"success" => true, 
-		"mark" => 2.2 
-	); 
-	
-	$veranstaltungInfo35 = Array( 	
-		"titel" => "Humanities Computing vs. Humanities Computer Science I.", 
-		"id" => 35, 
-		"art" => "Seminar", 
-		"nam" => "Humanities Computer Science", 
-		"cp" => "5", 
-		"success" => true, 
-		"mark" => 1.7 
-	); 
-	
-	$veranstaltungInfo36 = Array( 
-		"titel" => "Humanities Computing vs. Humanities Computer Science I.", 
-		"id" => 36, 
-		"art" => "Übung", 
-		"nam" => "Anwendungsgebiet", 
-		"cp" => "3", 
-		"success" => false, 
-		"mark" => " "
-	); 
-		
-	$veranstaltungInfo37 = Array( 
-			"titel" => "Humanities Computing vs. Humanities Computer Science I.", 
-			"id" => 37, 
-			"art" => "Kolloquium", 
-			"nam" => "Humanities Computing", 
-			"cp" => "2", 
-			"success" => false,
-			"mark" => " " 	
-		); 
-		
-		$veranstaltungInfo38 = Array( 
-			"titel" => "Humanities Computing vs. Humanities Computer Science II.", 
-			"id" => 38, 
-			"art" => "Seminar", 
-			"nam" => "Humanities Computer Science", 
-			"cp" => "5", 
-			"success" => true, 
-			"mark" => 3.0 
-		); 
-		
-		$veranstaltungInfo39 = Array( 
-			"title" => "Humanities Computing vs. Humanities Computer Science II.", 
-			"id" => 39, 
-			"art" => "Übung", 
-			"nam" => "Anwendungsgebiet", 
-			"cp" => "3", 
-			"success" => "true",	
-			"mark" => " "
-		); 
-		
-		$veranstaltungInfo40 = Array( 
-			"titel" => "Humanities Computing vs. Humanities Computer Science II.", 
-			"id" => 40, 
-			"art" => "Vorlesung",
-			"nam" => "Medienkunst und ihre Beshreibung", 
-			"cp" => "2", 
-			"success" => true, 
-			"mark" => " " 	
-		); 
-		
-		$veranstaltungInfo41 = Array( 
-			"titel" => "Visuelle Programmierung", 
-			"id" => 41, 
-			"art" => "Seminar", 
-			"nam" => "Visuelle Programmierung I.", 
-			"cp" => "3", 
-			"success" => false, 
-			"mark" => " "	
-		);
-			
-		$veranstaltungInfo42 = Array( 
-			"titel" => "Visuelle Programmierung",
-			"id" => 42, 
-			"art" => "Seminar", 
-			"nam" => "Visuelle Programmierung II.",
-			"cp" => "5", 
-			"success" => false, 
-			"mark" => " "
-		);
-	
-		$veranstaltungInfo43 = Array( 
-			"titel" => "Visuelle Programmierung", 
-			"id" => 43, 
-			"art" => "Visuelle Programmierung I.", 
-			"nam" => "Vorlesung", 
-			"cp" => "2", 
-			"success" => false, 
-			"mark" => " "
-		);
-			
-		$veranstaltungInfo44 = Array( 		
-			"titel" => " ", 
-			"id" => 44, 
-			"art" => "Mündliche BA-Prüfung", 
-			"nam" => " ", 		
-			"cp" => "6", 
-			"success" => true, 
-			"mark" => 1.7 
-		); 
-		
-		$veranstaltungInfo45 = Array( 
-			"titel" => " ", 	
-			"id" => 45, 	
-			"art" => "Mündliche BA-Prüfung",
-			"nam" => "", 
-			"cp" => "6", 
-			"success" => false, 
-			"mark" => " "
-		); 
 			
 
-$MODULE_INFO_AMOUNT= 6;
+$MODULE_INFO_AMOUNT= 8;
 	
 	$moduleInfo1 = Array(
 		"id" => 1,
 		"titel" => "Basismodul 1",
-		"module" => Array(1, 2, 3)
+		"module" => Array(1,2,3,4)
 	);
 	
 	$moduleInfo2 = Array(
 		"id" => 2,
 		"titel" => "Basismodul 2",
-		"module" => Array(4, 5, 6)
+		"module" => Array(5,6,7)
 	);
 	
 	$moduleInfo3 = Array(
 		"id" => 3,
 		"titel" => "Basismodul 3",
-		"module" => Array(7, 8, 9)
+		"module" => Array(8,9,10)
 	);
 	
 	$moduleInfo4 = Array(
 		"id" => 4,
 		"titel" => "Basismodul 4",
-		"module" => Array(10, 11, 12)
+		"module" => Array(11,12,13)
 	);
 	
 	$moduleInfo5 = Array(
-		"id" => 5,
+		"id" => 5 ,
 		"titel" => "Aufbaumodul 1",
-		"modulee" => Array(13, 14, 15)
+		"module" => Array(14,15,16)
 	);
 	
 	$moduleInfo6 = Array(
 		"id" => 6,
 		"titel" => "Aufbaumodul 2",
-		"module" => Array(16, 17)
+		"module" => Array(17,18,19)
 	);
+	
+	$moduleInfo7 = Array(
+		"id" => 7,
+		"titel" => "Aufbaumodul 3",
+		"module" => Array(20,21,22,23,24)
+	);
+	
+	$moduleInfo8 = Array(
+		"id" => 8,
+		"titel" => "BA-Prüfung",
+		"module" => Array(25,26)
+	);
+
 
 
 	
