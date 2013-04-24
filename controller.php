@@ -133,20 +133,6 @@
 			    		);
 			    	}
 
-			    	if ($params['action'] == 'unsubscribe') {
-			    		$courses = $this->currentUser->courses;
-			    		foreach ($courses as $i => $course) {
-			    			if ($course->id == (int) $params['id']) {
-			    				array_splice($courses, $i, 1);
-			    			}
-			    		}
-			    		$this->currentUser->save($this->objectFactory->DATA_DIRECTORY);
-			    		$this->objectFactory->loadAllFromFiles();
-			    		$content = new Template(
-			    			$this->VIEWS_DIR . 'course_index.php',
-			    			Array('courses' => $this->currentUser->courses)
-			    		);
-			    	}
 			    }
 
 			}

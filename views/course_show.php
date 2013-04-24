@@ -5,12 +5,12 @@
 
 <ul class="breadcrumb">
 	<li>Vorlesungsverzeichnis <span class="divider">/</span></li>
-	<li><a href="index.php?controller=course&action=show&amp;id=<?= $course->id ?>"><?= $course->titel ?></a></li>
+	<li><a href="index.php?controller=course&amp;action=show&amp;id=<?= $course->id ?>"><?= $course->titel ?></a></li>
 </ul>
 
 <h2 id="course-title"><?= $course->titel ?></h2>
 
-<a href="index.php?controller=course&amp;action=subscribe&amp;id=<?= $course->id ?>" class="btn btn-small btn-primary pull-right" type="button">Belegen</a>
+<a href="#" class="btn btn-small btn-primary pull-right" type="button">Belegen</a>
 
 <div class="muted short-info">
 	<?= $course->art ?> /
