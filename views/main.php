@@ -26,8 +26,9 @@
 			</div>
 			
 			<footer id="footer" class="row-fluid">
-					<pre><? var_dump(array_merge($_GET, $_POST)) ?></pre>
-					<pre><? var_dump($this->content) ?></pre>
+<!-- DEBUG -->
+<!-- 					<pre><? var_dump(array_merge($_GET, $_POST)) ?></pre>
+					<pre><? var_dump($this->content) ?></pre> -->
 			</footer>
 
 		</div>
