@@ -6,4 +6,6 @@
 	(<?= $user->semester ?>. Semester)
 </div>
 
-<? $this->coursesTemplate->render() ?>
+<div class="user-articles-container">
+	<? $this->coursesTemplate->render() ?>
+</div>

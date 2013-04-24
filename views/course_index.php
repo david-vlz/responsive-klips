@@ -1,6 +1,6 @@
 <? if ($this->includedInOtherTemplate) { ?> 
 
-	<h3>Kurse</h3>
+	<h3>Belegte Kurse</h3>
 
 <? } else { ?>
 
