@@ -1,7 +1,6 @@
 *.scssc
 config.php
 *.sublime*
-.htaccess
 data/*
 *.zip
 .DS_Store
