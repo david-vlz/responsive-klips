@@ -1,47 +1,25 @@
 
-<h3>Ein bi&szlig;chen Inhalt</h3>
-<p>
-	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-</p>
+<h2>Aktuelle Informationen</h2>
 
-<!-- die muted Klasse sagt Bootstrap, dass wir einen Inhalt weniger hervorheben wollen -->
-<h4 class="muted">Eine Tabelle</h4>
-<!-- Bootstrap-Klassen fürs Tabellenlayout direkt hier -->
-<table class="table table-striped table-condensed">
-		<tr>
-			<th>Bereich</th>
-			<th>Link</th>
-			<th>Infos</th>
-		</tr>
-		<tr>
-			<td>Navigation</td>
-			<td><a href="http://twitter.github.com/bootstrap/components.html#navs">Link...</a></td>
-			<td>#</td>
-		</tr>
-		<tr>
-			<td>Tabellen</td>
-			<td><a href="http://twitter.github.com/bootstrap/base-css.html#tables">Link...</a></td>
-			<td>#</td>
-		</tr>
-</table>
+<section class="news">
+	
+	<article class="news-container">
+		<h3 class="news-heading">Veröffentlichung der Vergabeergebnisse <small class="pull-right">02.04.2013</small></h3>
+		<p>Die Ergebnisse der zweiten Belegungsphase wurden am 3. April 2013 ver&ouml;ffentlicht. Die Ergebnisse sind in KLIPS im SoSe 2013 im Men&uuml; &quot;Meine Veranstaltungen&quot; zu finden. Am 8. April 2013 beginnt gegen 0:00 Uhr die Restplatzvergabe. Diese l&auml;uft bis zum 28. April 2013.</p>
+	</article>
 
-<h4>Links</h4>
-<ul>
-	<li><a href="http://www.selfhtml5.org/html5-tag-systematik/">HTML5 Tag Systematik</a></li>
-	<li><a href="http://twitter.github.com/bootstrap/scaffolding.html#responsive">Bootstrap &uuml;ber ihre Responisve-Klassen</a></li>
-	<li><a href="http://mediaqueri.es/">Beispiele f&uuml;r responisve Seiten</a></li>
-	<li><a href="http://twitter.github.com/bootstrap/base-css.html#tables">Bootstrap: Tabellen</a></li>
-	<li><a href="http://twitter.github.com/bootstrap/base-css.html#icons">Bootstrap: Icons</a></li>
-	<li><a href="http://twitter.github.com/bootstrap/components.html#misc">Bootstrap: Hilfreiches</a></li>
-	<li><a href="http://twitter.github.com/bootstrap/components.html#buttonGroups">Bootstrap: Buttons</a></li>
-</ul>
+	<div class="divider-line"></div>
 
-<h4>Mehr Inhalt</h4>
-<p class="well">
-	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-</p>
+	<article class="news-container">
+		<h3 class="news-heading">Eine weitere Neuigkeit <small class="pull-right">05.03.2013</small></h3>
+		<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+	</article>
 
-<h4>Ein paar Icons</h4>
-<i class="icon-edit"></i> Edit <br>
-<i class="icon-calendar"></i> Kalender <br>
-<i class="icon-list-alt"></i> Liste <br>
+	<div class="divider-line"></div>
+
+	<article class="news-container">
+		<h3 class="news-heading">Noch eine Neuigkeit <small class="pull-right">31.01.2013</small></h3>
+		<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+	</article>
+
+</section>
