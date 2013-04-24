@@ -2,7 +2,7 @@
 
 <ul class="breadcrumb">
 	<li>Vorlesungsverzeichnis <span class="divider">/</span></li>
-	<li><a href="index.php?controller=search_major&action=index">nach Studiengängen</a><span class="divider">/</span></li>
+	<li><a href="/search_major/index">nach Studiengängen</a><span class="divider">/</span></li>
 	<li><a href="#"><?= $this->major->majorNr?> <?= $this->major->name?></a></li>
 </ul>
 
@@ -37,7 +37,7 @@
 				<tr>
 				
 					<td><?= $course->lvNummer?></td>
-					<td><a href="index.php?controller=course&amp;action=show&amp;id=<?= $course->id ?>"><?= $course->titel?></a></td>
+					<td><a href="/course/show/<?= $course->id ?>"><?= $course->titel?></a></td>
 					<td><?= $course->zeit?></td>
 					<td class="art"><?= $course->art?></td>
 					<td class="modul"><?= $course->modul?></td>

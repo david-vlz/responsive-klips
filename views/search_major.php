@@ -15,7 +15,7 @@
 
 <ul class="breadcrumb">
 	<li>Vorlesungsverzeichnis <span class="divider">/</span></li>
-	<li><a href="index.php?controller=search_major&action=index">nach Studiengängen</a></li>
+	<li><a href="/search_major/index">nach Studiengängen</a></li>
 </ul>
 
 <h2>Vorlesungsverzeichnis Sommersemester 2013</h2>
@@ -82,7 +82,7 @@
 <option value="14" id="14" class="bachelor/1">702 Rechtswissenschaften (deutsch/französisch)</option>
 <option value="15" id="15" class="bachelor/1">703 Medienwissenschaft (Medienrecht)</option>
 <option value="16" id="16" class="bachelor/1">704 Medienwissenschaft (Medienpsychologie)</option>
-<option value="index.php?controller=search_major&action=show&id=<?= $major->id;?>" id="17" class="bachelor/1">705 Medienwissenschaft (Medieninformatik)</option>
+<option value="/search_major/show/<?= $major->id;?>" id="17" class="bachelor/1">705 Medienwissenschaft (Medieninformatik)</option>
 <option value="18" id="18" class="bachelor/1">706 Medienwissenschaft (Medienmanagement)</option>
 <option value="19" id="19" class="bachelor/1">707 Medienwissenschaft (Ökonomie und Soziologie der Medien)</option>
 <option value="20" id="20" class="bachelor/1">721 Regionalstudien Lateinamerika (Volkswirtschaftslehre)</option>

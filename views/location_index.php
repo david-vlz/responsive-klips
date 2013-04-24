@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
-  <li>Hilfe & Service <span class="divider">/</span></li>
-  <li><a href="index.php?controller=location&action=index">Gebäude</a></li>
+  <li>Hilfe &amp; Service <span class="divider">/</span></li>
+  <li><a href="/location/index">Gebäude</a></li>
 </ul>
 
 <h2>Gebäude <span class="volltext">der Universität zu Köln</span></h2>
@@ -19,9 +19,9 @@
 	<tbody>
 		<? foreach($this->location as $location) { ?>
 		<tr>
-			<td><a href="index.php?controller=location&action=show&id=<?= $location->id; ?>" title="<?= $location->id; ?>"><?= $location->gebnr; ?></a></td>
+			<td><a href="/location/show/<?= $location->id; ?>" title="<?= $location->id; ?>"><?= $location->gebnr; ?></a></td>
 			<td class="zuordnung"><?php if($location->zuordnung == 0) echo "Klinikum"; if($location->zuordnung == 1) echo "Universität"; ?></td>
-			<td><a href="index.php?controller=location&action=show&id=<?= $location->id; ?>"><?= $location->name; ?></a></td>
+			<td><a href="/location/show/<?= $location->id; ?>"><?= $location->name; ?></a></td>
 			<td class="adresse"><?= $location->strasse; ?></td>
 		</tr>
 		<? } ?>

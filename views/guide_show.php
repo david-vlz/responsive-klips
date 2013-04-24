@@ -2,7 +2,7 @@
 
 <ul class="breadcrumb">
 	<li>Vorlesungsverzeichnis <span class="divider">/</span></li>
-	<li><a href="index.php?controller=institute&action=index">nach Einrichtungen</a> <span class="divider">/</span></li>
+	<li><a href="/institute/index">nach Einrichtungen</a> <span class="divider">/</span></li>
 	<li><a href="#"><?= $this->institute->name?></a></li>
 </ul>
 
@@ -34,11 +34,11 @@
 			<tbody>
 				<? foreach($degree->courses as $course) { ?>
 				<tr>
-					<td><a href="index.php?controller=course&amp;action=show&amp;id=<?= $course->id ?>"><?= $course->titel?></a></td>
+					<td><a href="/course/show/<?= $course->id ?>"><?= $course->titel?></a></td>
 					<td><?= $course->zeit?></td>
 					<td class="art"><?= $course->art?></td>
 					<td class="modul"><?= $course->modul?></td>
-					<td><a href="index.php?controller=location&action=show&id=<?= $course->gebaeude[0]->id?>"><?= $course->gebaeude[0]->name?></a></td>
+					<td><a href="/location/show/<?= $course->gebaeude[0]->id?>"><?= $course->gebaeude[0]->name?></a></td>
 				<?}?>
 			</tbody>
 		</table>

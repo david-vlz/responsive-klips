@@ -9,15 +9,15 @@ $adresse = $strasse . ", 50923 Köln";
 ?>
 
 <ul class="breadcrumb">
-  <li>Hilfe & Service <span class="divider">/</span></li>
-  <li><a href="index.php?controller=location&action=index">Gebäude</a> <span class="divider">/</span></li>
+  <li>Hilfe &amp; Service <span class="divider">/</span></li>
+  <li><a href="/location/index">Gebäude</a> <span class="divider">/</span></li>
   <li><a href="#"><?= $name; ?></a></li>
 </ul>
 
 <h2><?= $name; ?></h2>
 
 <div id="show_photo">
-<a href="img/location/<?= $gebnr; ?>.jpg"><img src="img/location/thumbnail_<?= $gebnr; ?>.jpg" alt="<?= $name; ?>" title="<?= $name; ?>"></a>
+<a href="/img/location/<?= $gebnr; ?>.jpg"><img src="/img/location/thumbnail_<?= $gebnr; ?>.jpg" alt="<?= $name; ?>" title="<?= $name; ?>"></a>
 </div>
 
 <table id="einzelansicht" class="table table-striped">
@@ -76,7 +76,7 @@ $adresse = $strasse . ", 50923 Köln";
                         var myPositionLng = position.coords.longitude;
 
                         myPosition = new google.maps.LatLng(myPositionLat,myPositionLng);
-                        var myPositionImage = "img/location/icon_myposition.png";
+                        var myPositionImage = "/img/location/icon_myposition.png";
 
                         var markerUser = new google.maps.Marker({
                                 map: map,

@@ -3,16 +3,16 @@
 </div>
 
 <ul id="navigationlist" class="nav nav-list well">
-	<li><a href="index.php">Startseite</a></li>
+	<li><a href="/index.php">Startseite</a></li>
 	<li class="nav-header">Vorlesungsverzeichnis</li>
-	<li><a href="index.php?controller=institute&action=index">nach Einrichtungen</a></li>
-	<li><a href="index.php?controller=search_major&action=index">nach Studiengängen</a></li>
+	<li><a href="/institute/index">nach Einrichtungen</a></li>
+	<li><a href="/search_major/index">nach Studiengängen</a></li>
 	<li class="nav-header">Meine Funktionen</li>
-	<li><a href="index.php?controller=user&amp;action=show"><i class="icon-user"></i> <?= $this->user->name ?></a></li>
-	<li><a href="index.php?controller=course&amp;action=index">Meine Kurse</a></li>
-	<li><a href="index.php?controller=module&action=index">Prüfungsleistungen</a></li>
+	<li><a href="/user/show"><i class="icon-user"></i> <?= $this->user->name ?></a></li>
+	<li><a href="/course/index">Meine Kurse</a></li>
+	<li><a href="/module/index">Prüfungsleistungen</a></li>
 	<li class="nav-header">Hilfe & Service</li>		
-	<li><a href="index.php?controller=location&action=index">Gebäude</a></li>
+	<li><a href="/location/index">Gebäude</a></li>
 </ul>
 
 <script type="text/javascript">

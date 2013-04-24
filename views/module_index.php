@@ -2,7 +2,7 @@
             <!--collapse -->
             <p>
               <button class="btn danger" data-toggle="collapse" data-target="#collapseDemoWrap">
-                <h5>Prüfungslesitungen in Medienkulturwissenschaften <i class="icon-ok-circle"></i>45/90 CPs</h5>
+                <h5>Prüfungsleistungen in Medienkulturwissenschaften <i class="icon-ok-circle"></i>45/90 CPs</h5>
               </button>
             </p>
 			  <div id="collapseDemoWrap" class="collapse"> 

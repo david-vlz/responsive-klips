@@ -2,7 +2,7 @@
 
 <ul class="breadcrumb">
 	<li>Vorlesungsverzeichnis <span class="divider">/</span></li>
-	<li><a href="index.php?controller=institute&action=index">nach Einrichtungen</a></li>
+	<li><a href="/institute/index">nach Einrichtungen</a></li>
 </ul>
 
 <h2>Vorlesungsverzeichnis Sommersemester 2013</h2>
@@ -28,7 +28,7 @@
 				<!--Schleife, die alle Institute aufruft-->
 				<? foreach($department->institutes as $institute) { ?>
 						<ul class="content-tabs">
-						<a href="index.php?controller=institute&action=show&id=<?= $institute->id; ?>" ><?= $institute->name; ?></a>
+						<a href="/institute/show/<?= $institute->id; ?>" ><?= $institute->name; ?></a>
 						</ul>
 				<? } ?>
 	</div>
