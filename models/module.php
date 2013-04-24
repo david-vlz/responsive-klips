@@ -2,7 +2,7 @@
 
 	class Module extends SessionData {
 
-		var $connectsTo = Array("module" => "Veranstaltung");
+		var $connectsTo = Array('module' => 'Veranstaltung');
 		
 		var $titel;
 		
@@ -10,6 +10,11 @@
 		
 		var $module;
 		
+
+		//var $institutes;
+
+		//var $subjects;
+
 	}
 
 ?>
