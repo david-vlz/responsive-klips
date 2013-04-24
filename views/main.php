@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<title>Responsive KLIPS</title>
 		<meta name="viewport" content="width=device-width">
-		<link href="css/stylesheet.css" rel="stylesheet" media="screen" />
-		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
-		<script type="text/javascript" src="js/jquery.chained.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js" ></script>	
+		<link href="/css/stylesheet.css" rel="stylesheet" media="screen" />
+		<script type="text/javascript" src="/js/jquery-1.9.1.js" ></script>
+		<script type="text/javascript" src="/js/jquery.chained.js"></script>
+		<script type="text/javascript" src="/js/bootstrap.min.js" ></script>	
 	</head>
 	<body>
 		<div id="wrapper" class="container-fluid">
