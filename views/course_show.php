@@ -5,7 +5,7 @@
 
 <ul class="breadcrumb">
 	<li>Vorlesungsverzeichnis <span class="divider">/</span></li>
-	<li><a href="index.php?controller=course&amp;action=show&amp;id=<?= $course->id ?>"><?= $course->titel ?></a></li>
+	<li><a href="/course/show/<?= $course->id ?>"><?= $course->titel ?></a></li>
 </ul>
 
 <h2 id="course-title"><?= $course->titel ?></h2>
@@ -25,7 +25,7 @@
 	<div class="course-info span7">
 		<ul>
 			<li><?= $course->zeit ?></li>
-			<li><a href="index.php?controller=location&amp;action=show&amp;id=<?= $gebaeude->id ?>"><?= $gebaeude->name ?></a></li>
+			<li><a href="/location/show/<?= $gebaeude->id ?>"><?= $gebaeude->name ?></a></li>
 		</ul>
 	</div>
 </div>

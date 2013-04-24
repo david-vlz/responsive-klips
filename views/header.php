@@ -1,1 +1,1 @@
-<a href="index.php"><img src="img/siegel.png" alt="Siegel der Universit&auml;t zu K&ouml;ln" class="logo" /> <h1><span class="unikoeln">Universität zu Köln</span> KLIPS <span class="volltext">- Kölner Lehr-, Informations- und Prüfungsservice</span></a></h1>
+<a href="/index.php"><img src="/img/siegel.png" alt="Siegel der Universit&auml;t zu K&ouml;ln" class="logo" /> <h1><span class="unikoeln">Universität zu Köln</span> KLIPS <span class="volltext">- Kölner Lehr-, Informations- und Prüfungsservice</span></a></h1>

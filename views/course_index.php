@@ -6,7 +6,7 @@
 
 	<ul class="breadcrumb">
 		<li>Meine Funktionen <span class="divider">/</span></li>
-		<li><a href="index.php?controller=course&and;action=index">Meine Kurse</a></li>
+		<li><a href="/course/index">Meine Kurse</a></li>
 	</ul>
 	<h2>Meine Kurse</h2>
 
@@ -16,7 +16,7 @@
 	
 	<div class="well well-small course-preview">
 
-		<a href="index.php?controller=course&amp;action=show&amp;id=<?= $course->id ?>" ><h3 id="course-title"><?= $course->titel ?></h3></a>
+		<a href="/course/show/<?= $course->id ?>" ><h3 id="course-title"><?= $course->titel ?></h3></a>
 
 		<a href="#" class="btn btn-small btn-danger pull-right" type="button">Abmelden</a>
 
