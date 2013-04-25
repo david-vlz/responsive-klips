@@ -8,7 +8,7 @@
 		  /* Für den Buttpn, nachdem man bereits ausgewählt hat */
 			  $("#search").on("click", function(e) {
 				e.preventDefault();
-				window.open($("#selectMajor").val() );
+				window.open($("#selectMajor").val(), "_self");
 				});
           });
 </script>
