@@ -41,7 +41,7 @@
 					<td><?= $course->zeit?></td>
 					<td class="art"><?= $course->art?></td>
 					<td class="modul"><?= $course->modul?></td>
-					<td class="gebäude"><?= $course->gebaeude?></td>
+					<td class="gebäude"><a href="/location/show/<?= $course->gebaeude[0]->id ?>"><?= $course->gebaeude[0]->name?></a></td>
 				</tr>
 				<?}?>
 			</tbody>
