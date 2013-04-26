@@ -158,9 +158,13 @@
 				    }
 				}
 
+				else {
+					$content = new Template($this->VIEWS_DIR . 'home.php', null);
+				}
+
 			}
 
-			// wenn kein bekannter Controller bekannt ist, wird der Inhalt der 
+			// wenn kein Controller bekannt ist, wird der Inhalt der 
 			// Homepage geladen
 			else {
 				$content = new Template($this->VIEWS_DIR . 'home.php', null);
